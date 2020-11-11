@@ -1,0 +1,18 @@
+%heading {
+    font-family: $heading-font;
+    text-transform: uppercase;
+    color: $secondary-color;
+    text-align: center;
+}
+
+%p {
+    font-size: rem(12px);
+    line-height: rem(24px);
+    font-family: $primary-font;
+}
+
+%h2 {
+    @extend %heading;
+    font-size: rem(24px);
+    line-height: rem(32px);
+}

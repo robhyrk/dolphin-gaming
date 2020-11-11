@@ -1,0 +1,40 @@
+/*
+Theme Name: Dolphin Gaming
+Author: Rob H - Outerheaven
+Description: Custom theme for Doplhin Gaming.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dolphingaming
+*/
+
+//SASS Rem Import
+@import "../node_modules/sass-rem/rem";
+
+//User Styles
+// @import 'base/reset';
+
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/shop';
