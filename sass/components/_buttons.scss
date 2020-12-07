@@ -1,3 +1,43 @@
+.wp-block-buttons {
+  text-align: center;
+  text-transform: uppercase;
+  a {
+    padding: rem(13px) rem(33px);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 10px;
+  padding: rem(13px) rem(28px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+      background-color: $primary-color;
+      border-color: $secondary-color;
+  }
+}
+.btn-secondary {
+  background-color: $primary-color;
+  border-color: $secondary-color;
+  &:hover {
+      background-color: $dark;
+      border-color: $secondary-color;
+      color: white;
+  }
+}
 
 .btn-animated  {
     position: absolute;

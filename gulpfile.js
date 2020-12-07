@@ -61,7 +61,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/starter'
+    proxy: 'localhost:8888/dolphin-gaming'
   });
 
   gulp.watch(files).on('change', browserSync.stream);

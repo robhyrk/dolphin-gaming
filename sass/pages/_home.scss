@@ -11,4 +11,39 @@
         justify-content: center;
         align-items: flex-end;
     }
+    #bingo {
+        background: url('../../assets/img/home-bingo.jpg');
+        h2 {
+            color: #CBCCC6;
+            text-align: start;
+        }
+    }
+    #taptix {
+        background: url('../../assets/img/home-machines.jpg');
+        background-position: center;
+        h2 {
+            padding-top: rem(108PX);
+            color: #CBCCC6;
+            text-align: end;
+        }
+    }
+    #jackpots-home {
+        .jackpot-time {
+            margin: 2rem 0;
+            padding: 1rem 0;
+            color: white;
+            font-size: rem(50px);
+            .time-box {
+                border: solid 1px $secondary-color;
+                padding: rem(8px) rem(6px);
+            }
+            .time-period {
+                font-size: 1rem;
+            }
+        }
+        .taptix-jackpots {
+           padding:2rem 0 0 0;
+
+        }
+    }
 }
