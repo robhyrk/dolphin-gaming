@@ -24,6 +24,7 @@ $grid-breakpoints: (
   xs: 0,
   sm: 688px,
   lg: 992px,
+  xl: 1440px
 ) !default;
 
 
@@ -69,6 +70,14 @@ $font-family-base: $font-family-sans-serif;
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     padding-left: rem(24px);
     padding-right: rem(24px);
+    @include tablet {
+        padding-left: rem(100px);
+        padding-right: rem(100px);
+    }
+    @include desktop {
+        padding-left: rem(204px);
+        padding-right: rem(204px);
+    }
 }
 
 //WP Buttons
@@ -76,9 +85,77 @@ $font-family-base: $font-family-sans-serif;
     background-color: $secondary-color;
 }
 
-//Global Styles
+//GLOBAL STYLES
 html, body {
     font-family: $primary-font;
     background: $primary;
     color: $light;
+}
+
+//Tables
+.table {
+    th, td {
+        @include tablet {
+            font-size: rem(24px);
+        }
+        @include desktop {
+            font-size: rem(32px);
+        }
+    }
+    thead th {
+        min-width: 80px;
+        @include tablet {
+            min-width: 160px;
+        }
+    }
+    tbody {
+        font-size: 14px;
+        th {
+            font-weight: 300;
+            padding-top: rem(12px);
+            padding-bottom: rem(12px);
+        }
+        td {
+            color: $secondary-color;
+            text-align: end;
+            padding-top: rem(12px);
+            padding-bottom: rem(12px);
+        }
+    }
+}
+
+//reset fonts
+p {
+    margin-bottom: 0;
+}
+
+//reset headings
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+//reset table padding
+.table td, .table th {
+    padding: 0;
+}
+
+.table thead th {
+    vertical-align: top;
+}
+
+//reset column padding
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+    padding-right: 0;
+    padding-left:0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
 }

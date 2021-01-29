@@ -1,3 +1,9 @@
+@mixin lg-desktop {
+	@media (min-width: $large-desktop-breakpoint) {
+		@content;
+	}
+}
+
 @mixin desktop {
 	@media (min-width: $desktop-breakpoint) {
 		@content;

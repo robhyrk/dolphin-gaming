@@ -1,12 +1,19 @@
 .home {
     .alert {
         text-align: center;
+        button {
+            @include tablet {
+                padding: 0 20px;
+                top: -3px;
+            }
+        }
     }
     .hero-banner {
         position: relative;
         min-height: 300px;
         background: url('../../assets/img/home-machines.jpg');
         background-size: cover;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -22,7 +29,7 @@
         background: url('../../assets/img/home-machines.jpg');
         background-position: center;
         h2 {
-            padding-top: rem(108PX);
+            // padding-top: rem(108PX);
             color: #CBCCC6;
             text-align: end;
         }
@@ -32,18 +39,105 @@
             margin: 2rem 0;
             padding: 1rem 0;
             color: white;
+            text-align: center;
             font-size: rem(50px);
             .time-box {
                 border: solid 1px $secondary-color;
-                padding: rem(8px) rem(6px);
+                padding-top: rem(6px);
+                padding-left: rem(6px);
+                padding-right: rem(6px);
+                margin: 0 4px;
+                display: inline-block;
+                font-size: rem(50px);
+                font-family: $heading-font;
+                min-width: rem(36px);
+                min-height: rem(75px);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                @include tablet {
+                    font-size: rem(65px);
+                }
+                @include desktop {
+                    font-size: rem(122px);
+                    min-height: rem(120px);
+                    padding-bottom: rem(6px);
+                }
             }
             .time-period {
-                font-size: 1rem;
+                font-size: rem(20px);
+                display: inline-block;
+                @include tablet {
+                    font-size: rem(32px)
+                }
+                @include desktop {
+                    font-size: rem(60px)
+                }
             }
         }
         .taptix-jackpots {
-           padding:2rem 0 0 0;
+           padding: 2rem 0 0 0;
+        }
+    }
 
+    #bingo-callers {
+        .bingo-caller-list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include desktop {
+                flex-direction: row;
+            }
+        }
+        div {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            @include desktop {
+                flex-direction: column;
+            }
+        }
+        p {
+            padding: rem(12px);
+            font-size: 16px;
+            min-width: 83px;
+            text-align: start;
+            width: 100%;
+            margin-bottom: 0;
+            &:first-child(){
+                text-align: end;
+                @include desktop {
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            }
+            @include tablet {
+                font-size: rem(24px);
+            }
+            @include desktop {
+                text-align: center;
+            }
+        }
+    }
+    #bingo-jackpots {
+        h3 {
+            font-size: rem(20px);
+            text-align: center;
+            text-transform: uppercase;
+            @include tablet {
+                font-size: rem(30px);
+            }
+            @include desktop {
+                font-size: rem(50px);
+            }
+        }
+        h4 {
+            text-transform: uppercase;
+            font-weight: 300;
+            @include desktop {
+                font-size: rem(32px);
+            }
         }
     }
 }

@@ -9,10 +9,22 @@
     font-size: rem(12px);
     line-height: rem(24px);
     font-family: $primary-font;
+    @include desktop {
+        font-size: rem(16px);
+        line-height: rem(32px);
+    }
 }
 
 %h2 {
     @extend %heading;
     font-size: rem(24px);
     line-height: rem(32px);
+    @include tablet {
+        font-size: rem(32px);
+        line-height: rem(45px);
+    }
+    @include desktop {
+        font-size: rem(56px);
+        line-height: rem(78px);
+    }
 }
