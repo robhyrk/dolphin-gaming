@@ -3,34 +3,59 @@
     p {
         font-size: 14px;
         text-transform: uppercase;
+        color: #171717;
+        padding-right: rem(24px);
+        padding-left: rem(24px);
+        padding-top: rem(24px);
+        padding-bottom: rem(24px);
     }
 }
 
 footer {
+    p {
+        @include tablet {
+            font-size: rem(12px);
+            line-height: 22px;
+        }
+    }
     .menu-footer-container {
         width:100%;
     }
     #menu-footer {
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: rem(24px);
+        padding-bottom: rem(40px);
         justify-content: space-evenly;
-        column-gap: 20px;
         width: 100%;
         a {
             color: white;
-            font-weight: 300;
             text-transform: uppercase;
             font-size: 12px;
-        }
+            padding-right: rem(10px);
+            padding-left: rem(10px);
+        } 
     }
     .contact-info {
         border-top: solid 1px white;
         border-bottom: solid 1px white;
         text-transform: uppercase;
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
         .phone-number {
-            color: $secondary-color;
+            padding-top: rem(30px);
+            padding-bottom: rem(30px);
+            @include tablet {
+                padding-top: rem(0px);
+                padding-bottom: rem(0px);
+            }
+            p {
+                color: $secondary-color;
+            }
         }
     }
     .social-icons{
@@ -46,8 +71,11 @@ footer {
     }
     .logos {
         border-bottom: solid 1px white;
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
         @include tablet {
             border-bottom: none;
+            padding-right: rem(27.5px);
         }
         img {
             object-fit: contain;
@@ -55,5 +83,16 @@ footer {
     }
     .footer-bottom {
         text-transform: uppercase;
+        padding-top: rem(30px);
+        @include tablet {
+            padding-top: rem(55px);
+            padding-left: rem(27.5px);
+        }
+        p {
+            @include tablet {
+                font-size: rem(12px);
+                line-height: 18px;
+            }
+        }
     }
 }

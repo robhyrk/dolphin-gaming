@@ -7,33 +7,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dolphingaming
 */
-h2 {
-  font-family: "Jost", sans-serif;
-  text-transform: uppercase;
-  color: #C3922E;
-  text-align: center; }
-
-p {
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-  font-family: "Mallanna", sans-serif; }
-  @media (min-width: 992px) {
-    p {
-      font-size: 1rem;
-      line-height: 2rem; } }
-
-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem; }
-  @media (min-width: 688px) {
-    h2 {
-      font-size: 2rem;
-      line-height: 2.8125rem; } }
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 3.5rem;
-      line-height: 4.875rem; } }
-
 *,
 *::before,
 *::after {
@@ -4778,18 +4751,32 @@ input[type="button"].btn-block {
   border: 0;
   font-size: 0.75rem;
   text-transform: uppercase;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: center;
+  padding-left: 2.1875rem;
+  padding-right: 2.1875rem; }
+  @media (min-width: 688px) {
+    .alert {
+      padding-top: 1.5625rem;
+      padding-bottom: 1.5625rem; } }
+  @media (min-width: 992px) {
+    .alert {
+      font-size: 1.125rem; } }
+  .alert .close {
+    font-size: 2rem;
+    padding: 0;
+    top: 15px;
+    right: 15px; }
+    @media (min-width: 688px) {
+      .alert .close {
+        top: 10px;
+        right: 25px; } }
   .alert button {
     background: transparent;
     border: none; }
   .alert-danger {
     background-color: #FF5959;
     color: white; }
-
-.alert-dismissible {
-  padding: 1rem 4rem; }
-  .alert-dismissible .close {
-    font-size: 2rem; }
 
 .container,
 .container-fluid,
@@ -4798,7 +4785,9 @@ input[type="button"].btn-block {
 .container-lg,
 .container-xl, .container-lg, .container-md, .container-sm, .container-xl {
   padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   @media (min-width: 688px) {
     .container,
     .container-fluid,
@@ -4807,7 +4796,9 @@ input[type="button"].btn-block {
     .container-lg,
     .container-xl, .container-lg, .container-md, .container-sm, .container-xl {
       padding-left: 6.25rem;
-      padding-right: 6.25rem; } }
+      padding-right: 6.25rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
   @media (min-width: 992px) {
     .container,
     .container-fluid,
@@ -4816,7 +4807,24 @@ input[type="button"].btn-block {
     .container-lg,
     .container-xl, .container-lg, .container-md, .container-sm, .container-xl {
       padding-left: 12.75rem;
-      padding-right: 12.75rem; } }
+      padding-right: 12.75rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+
+.container-footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+  @media (min-width: 688px) {
+    .container-footer {
+      padding-left: 5.3125rem;
+      padding-right: 5.3125rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+
+article {
+  min-height: 360px; }
 
 .wp-block-button__link {
   background-color: #C3922E; }
@@ -4826,45 +4834,26 @@ html, body {
   background: #171717;
   color: #CBCCC6; }
 
-@media (min-width: 688px) {
-  .table th,
-  .table td {
-    font-size: 1.5rem; } }
-
-@media (min-width: 992px) {
-  .table th,
-  .table td {
-    font-size: 2rem; } }
-
-.table thead th {
-  min-width: 80px; }
-  @media (min-width: 688px) {
-    .table thead th {
-      min-width: 160px; } }
-
-.table tbody {
-  font-size: 14px; }
-  .table tbody th {
-    font-weight: 300;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
-  .table tbody td {
-    color: #C3922E;
-    text-align: end;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
-
 p {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0; }
 
+.table {
+  margin-bottom: 0; }
+
 .table td, .table th {
   padding: 0; }
 
 .table thead th {
-  vertical-align: top; }
+  vertical-align: bottom; }
+
+.table tbody:before {
+  content: "@";
+  display: block;
+  line-height: 0.75rem;
+  text-indent: -99999px; }
 
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
   padding-right: 0;
@@ -4878,48 +4867,324 @@ h1, h2, h3, h4, h5, h6 {
   .container, .container-md, .container-sm {
     max-width: 100%; } }
 
-@media (min-width: 688px) {
-  header .navbar {
-    padding-right: 100px;
-    padding-left: 100px; } }
+h2 {
+  font-family: "Fusi Bold", sans-serif;
+  text-transform: uppercase;
+  color: #C3922E;
+  text-align: center; }
 
-@media (min-width: 992px) {
-  header .navbar {
-    justify-content: flex-end; } }
+p {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-family: "Mallanna", sans-serif;
+  color: #CBCCC6; }
+  @media (min-width: 688px) {
+    p {
+      font-size: 0.875rem;
+      line-height: 2rem; } }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1rem;
+      line-height: 2rem; } }
+
+.section-title {
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px; }
+  @media (min-width: 688px) {
+    .section-title {
+      padding-bottom: 3.125rem; } }
+
+.section-subtitle {
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px; }
+  @media (min-width: 688px) {
+    .section-subtitle {
+      padding-bottom: 2.5rem; } }
+
+.section-title-lg {
+  padding-bottom: 2.5rem;
+  letter-spacing: 2px; }
+
+.home .inner-content, .home #explore-gaming .main-desc {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+  @media (min-width: 688px) {
+    .home .inner-content, .home #explore-gaming .main-desc {
+      padding-top: 2rem;
+      padding-bottom: 2rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 2px; }
+  @media (min-width: 688px) {
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      line-height: 2.8125rem; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 2.5rem; } }
+
+.table thead th {
+  font-family: "Alegreya Sans Bold", sans-serif;
+  color: #CBCCC6; }
+
+.table tbody th {
+  font-family: "Alegreya Sans Light", sans-serif;
+  letter-spacing: 0.125rem;
+  color: #CBCCC6;
+  letter-spacing: 0.25px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.table tbody td {
+  font-family: "Alegreya Sans Bold", sans-serif;
+  color: #C3922E;
+  font-weight: 700;
+  text-align: end;
+  letter-spacing: 0.125rem;
+  letter-spacing: 0.25px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+@font-face {
+  font-family: 'Fusi';
+  src: url("../../assets/fonts/FusiNormal.eot");
+  src: url("../../assets/fonts/FusiNormal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FusiNormal.woff2") format("woff2"), url("../../assets/fonts/FusiNormal.woff") format("woff"), url("../../assets/fonts/FusiNormal.ttf") format("truetype"), url("../../assets/fonts/FusiNormal.svg#FusiNormal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Fusi Bold';
+  src: url("../../assets/fonts/FusiBold.eot");
+  src: url("../../assets/fonts/FusiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FusiBold.woff2") format("woff2"), url("../../assets/fonts/FusiBold.woff") format("woff"), url("../../assets/fonts/FusiBold.ttf") format("truetype"), url("../../assets/fonts/FusiBold.svg#FusiBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Light';
+  src: url("../../assets/fonts/AlegreyaSans-Light.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Light.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Light.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Light.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Light.svg#AlegreyaSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Italic';
+  src: url("../../assets/fonts/AlegreyaSans-Italic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Italic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Italic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Italic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Italic.svg#AlegreyaSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Extra Bold Italic';
+  src: url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-ExtraBoldItalic.svg#AlegreyaSans-ExtraBoldItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Bold Italic';
+  src: url("../../assets/fonts/AlegreyaSans-BoldItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-BoldItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-BoldItalic.svg#AlegreyaSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Extra Bold';
+  src: url("../../assets/fonts/AlegreyaSans-ExtraBold.eot");
+  src: url("../../assets/fonts/AlegreyaSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-ExtraBold.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-ExtraBold.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-ExtraBold.svg#AlegreyaSans-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Bold';
+  src: url("../../assets/fonts/AlegreyaSans-Bold.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Bold.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Bold.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Bold.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Bold.svg#AlegreyaSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Black';
+  src: url("../../assets/fonts/AlegreyaSans-Black.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Black.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Black.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Black.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Black.svg#AlegreyaSans-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Black Italic';
+  src: url("../../assets/fonts/AlegreyaSans-BlackItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-BlackItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-BlackItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-BlackItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-BlackItalic.svg#AlegreyaSans-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Thin Italic';
+  src: url("../../assets/fonts/AlegreyaSans-ThinItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-ThinItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-ThinItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-ThinItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-ThinItalic.svg#AlegreyaSans-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Light Italic';
+  src: url("../../assets/fonts/AlegreyaSans-LightItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-LightItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-LightItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-LightItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-LightItalic.svg#AlegreyaSans-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Medium';
+  src: url("../../assets/fonts/AlegreyaSans-Medium.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Medium.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Medium.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Medium.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Medium.svg#AlegreyaSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Thin';
+  src: url("../../assets/fonts/AlegreyaSans-Thin.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Thin.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Thin.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Thin.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Thin.svg#AlegreyaSans-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans Italic';
+  src: url("../../assets/fonts/AlegreyaSans-MediumItalic.eot");
+  src: url("../../assets/fonts/AlegreyaSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-MediumItalic.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-MediumItalic.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-MediumItalic.svg#AlegreyaSans-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url("../../assets/fonts/AlegreyaSans-Regular.eot");
+  src: url("../../assets/fonts/AlegreyaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("../../assets/fonts/AlegreyaSans-Regular.woff") format("woff"), url("../../assets/fonts/AlegreyaSans-Regular.ttf") format("truetype"), url("../../assets/fonts/AlegreyaSans-Regular.svg#AlegreyaSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.alert {
+  font-family: 'Alegreya Sans Light';
+  letter-spacing: 2px; }
+
+.table thead th {
+  font-size: 1rem; }
+  @media (min-width: 688px) {
+    .table thead th {
+      font-size: 1.5rem; } }
+  @media (min-width: 992px) {
+    .table thead th {
+      font-size: 2rem; } }
+
+.table tbody {
+  font-size: 0.875rem; }
+  @media (min-width: 688px) {
+    .table tbody {
+      font-size: 1.5rem; } }
+  @media (min-width: 992px) {
+    .table tbody {
+      font-size: 2rem; } }
+  .table tbody.large {
+    font-size: 1rem; }
+    @media (min-width: 688px) {
+      .table tbody.large {
+        font-size: 2rem; } }
+
+header .navbar-toggler {
+  border: none;
+  padding: 0; }
+  header .navbar-toggler:focus {
+    outline: none; }
+
+header .navbar {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  @media (min-width: 688px) {
+    header .navbar {
+      padding-right: 100px;
+      padding-left: 100px; } }
+  @media (min-width: 992px) {
+    header .navbar {
+      justify-content: flex-end; } }
+
+header .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0; }
+  header .navbar-brand img {
+    width: 42px; }
 
 header .collapse.navbar-collapse {
   justify-content: flex-end; }
+
+header .nav-link {
+  font-size: 1.125rem; }
 
 .age-gate {
   background: #C3922E; }
   .age-gate p {
     font-size: 14px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #171717;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+
+@media (min-width: 688px) {
+  footer p {
+    font-size: 0.75rem;
+    line-height: 22px; } }
 
 footer .menu-footer-container {
   width: 100%; }
 
 footer #menu-footer {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
   justify-content: space-evenly;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
   width: 100%; }
   footer #menu-footer a {
     color: white;
-    font-weight: 300;
     text-transform: uppercase;
-    font-size: 12px; }
+    font-size: 12px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
 
 footer .contact-info {
   border-top: solid 1px white;
   border-bottom: solid 1px white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   footer .contact-info .phone-number {
-    color: #C3922E; }
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; }
+    @media (min-width: 688px) {
+      footer .contact-info .phone-number {
+        padding-top: 0rem;
+        padding-bottom: 0rem; } }
+    footer .contact-info .phone-number p {
+      color: #C3922E; }
 
 footer .social-icons i {
   color: black;
@@ -4931,16 +5196,28 @@ footer .social-icons i {
   margin: 0 10px; }
 
 footer .logos {
-  border-bottom: solid 1px white; }
+  border-bottom: solid 1px white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   @media (min-width: 688px) {
     footer .logos {
-      border-bottom: none; } }
+      border-bottom: none;
+      padding-right: 1.71875rem; } }
   footer .logos img {
     -o-object-fit: contain;
        object-fit: contain; }
 
 footer .footer-bottom {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 1.875rem; }
+  @media (min-width: 688px) {
+    footer .footer-bottom {
+      padding-top: 3.4375rem;
+      padding-left: 1.71875rem; } }
+  @media (min-width: 688px) {
+    footer .footer-bottom p {
+      font-size: 0.75rem;
+      line-height: 18px; } }
 
 .wp-block-buttons {
   text-align: center;
@@ -4951,22 +5228,38 @@ footer .footer-bottom {
     font-weight: 700;
     letter-spacing: 1px; }
 
+.btn-group {
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 688px) {
+    .btn-group {
+      justify-content: initial; } }
+  @media (min-width: 992px) {
+    .btn-group {
+      justify-content: flex-start; } }
+
 .btn {
   font-size: 10px;
   padding: 0.8125rem 1.75rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
+  @media (min-width: 992px) {
+    .btn {
+      font-size: 1.125rem; } }
 
 .btn-primary {
   background-color: #C3922E;
-  border-color: #C3922E; }
+  border-color: #C3922E;
+  border-width: 3px; }
   .btn-primary:hover {
     background-color: #171717;
     border-color: #C3922E; }
 
 .btn-secondary {
   background-color: #171717;
-  border-color: #C3922E; }
+  border-color: #C3922E;
+  border-width: 3px;
+  color: #C3922E; }
   .btn-secondary:hover {
     background-color: #343a40;
     border-color: #C3922E;
@@ -4986,13 +5279,17 @@ footer .footer-bottom {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: black; }
   .btn-animated p {
     margin-bottom: 0;
     min-width: 175px; }
+  .btn-animated:hover {
+    text-decoration: none;
+    color: white; }
 
 .btn-animated :hover {
-  background-color: #000;
+  background-color: transparent;
   color: #fff; }
 
 .btn-animated span:nth-child(1) {
@@ -5094,56 +5391,148 @@ footer .footer-bottom {
     border: none;
     text-transform: uppercase; }
 
-.home .alert {
-  text-align: center; }
+.home .fullscreen-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 300px; }
+
+.home .fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; }
   @media (min-width: 688px) {
-    .home .alert button {
-      padding: 0 20px;
-      top: -3px; } }
+    .home .fullscreen-bg__video {
+      width: 100%;
+      height: auto; } }
+  @media (min-width: 992px) {
+    .home .fullscreen-bg__video {
+      width: auto;
+      height: 100%; } }
 
 .home .hero-banner {
   position: relative;
   min-height: 300px;
-  background: url("../../assets/img/home-machines.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: flex-end; }
+  @media (min-width: 992px) {
+    .home .hero-banner {
+      min-height: 700px; } }
+
+@media (min-width: 688px) {
+  .home #explore-gaming .main-title {
+    font-size: 2.5rem; } }
+
+@media (min-width: 688px) {
+  .home #explore-gaming .main-desc {
+    padding-bottom: 4.25rem; } }
+
+@media (min-width: 992px) {
+  .home #explore-gaming .main-desc {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem; } }
 
 .home #bingo {
-  background: url("../../assets/img/home-bingo.jpg"); }
+  background: url("../../assets/img/home-bingo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (min-width: 688px) {
+    .home #bingo {
+      padding-top: 9.25rem;
+      padding-bottom: 4.0625rem; } }
+  @media (min-width: 992px) {
+    .home #bingo {
+      min-height: 700px;
+      display: flex;
+      align-items: flex-end; } }
+  .home #bingo .inner-bingo-content {
+    max-width: 465px; }
   .home #bingo h2 {
     color: #CBCCC6;
     text-align: start; }
 
 .home #taptix {
   background: url("../../assets/img/home-machines.jpg");
-  background-position: center; }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end; }
+  @media (min-width: 688px) {
+    .home #taptix {
+      padding-top: 13.4375rem;
+      padding-bottom: 4.0625rem; } }
+  @media (min-width: 992px) {
+    .home #taptix {
+      min-height: 700px;
+      display: flex;
+      align-items: flex-end; } }
+  .home #taptix .inner-taptix-content {
+    max-width: 465px;
+    margin-left: auto; }
   .home #taptix h2 {
     color: #CBCCC6;
     text-align: end; }
+  @media (min-width: 688px) {
+    .home #taptix .btn-group {
+      justify-content: flex-end; } }
 
 .home #jackpots-home .jackpot-time {
-  margin: 2rem 0;
-  padding: 1rem 0;
   color: white;
   text-align: center;
-  font-size: 3.125rem; }
+  font-size: 3.125rem;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 5rem; }
+  @media (min-width: 688px) {
+    .home #jackpots-home .jackpot-time {
+      padding-top: 5rem;
+      width: 312px; } }
   .home #jackpots-home .jackpot-time .time-box {
-    border: solid 1px #C3922E;
-    padding-top: 0.375rem;
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
-    margin: 0 4px;
-    display: inline-block;
-    font-size: 3.125rem;
-    font-family: "Jost", sans-serif;
-    min-width: 2.25rem;
-    min-height: 4.6875rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; }
+    position: absolute;
+    top: 0; }
+    @media (min-width: 688px) {
+      .home #jackpots-home .jackpot-time .time-box {
+        top: 80px; } }
+    .home #jackpots-home .jackpot-time .time-box span {
+      width: 42px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 3px; }
+      @media (min-width: 688px) {
+        .home #jackpots-home .jackpot-time .time-box span {
+          left: 12px; } }
+      .home #jackpots-home .jackpot-time .time-box span:nth-child(2) {
+        left: 46px; }
+        @media (min-width: 688px) {
+          .home #jackpots-home .jackpot-time .time-box span:nth-child(2) {
+            left: 84px; } }
+      .home #jackpots-home .jackpot-time .time-box span:nth-child(3) {
+        left: 112px; }
+        @media (min-width: 688px) {
+          .home #jackpots-home .jackpot-time .time-box span:nth-child(3) {
+            left: 185px; } }
+      .home #jackpots-home .jackpot-time .time-box span:nth-child(4) {
+        left: 158px; }
+        @media (min-width: 688px) {
+          .home #jackpots-home .jackpot-time .time-box span:nth-child(4) {
+            left: 260px; } }
+      .home #jackpots-home .jackpot-time .time-box span:nth-child(5) {
+        left: 200px;
+        top: 50px;
+        font-size: 20px; }
+        @media (min-width: 688px) {
+          .home #jackpots-home .jackpot-time .time-box span:nth-child(5) {
+            font-size: 32px;
+            top: 60px;
+            left: 320px; } }
     @media (min-width: 688px) {
       .home #jackpots-home .jackpot-time .time-box {
         font-size: 4.0625rem; } }
@@ -5162,8 +5551,10 @@ footer .footer-bottom {
       .home #jackpots-home .jackpot-time .time-period {
         font-size: 3.75rem; } }
 
-.home #jackpots-home .taptix-jackpots {
-  padding: 2rem 0 0 0; }
+@media (min-width: 688px) {
+  .home #bingo-callers {
+    padding-top: 0rem;
+    padding-bottom: 0rem; } }
 
 .home #bingo-callers .bingo-caller-list {
   display: flex;
@@ -5188,7 +5579,11 @@ footer .footer-bottom {
   min-width: 83px;
   text-align: start;
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: "Alegreya Sans Light", sans-serif;
+  letter-spacing: 2px;
+  color: #CBCCC6;
+  font-weight: 300; }
   .home #bingo-callers p:first-child {
     text-align: end; }
     @media (min-width: 992px) {
@@ -5203,7 +5598,7 @@ footer .footer-bottom {
       text-align: center; } }
 
 .home #bingo-jackpots h3 {
-  font-size: 1.25rem;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase; }
   @media (min-width: 688px) {
@@ -5215,7 +5610,20 @@ footer .footer-bottom {
 
 .home #bingo-jackpots h4 {
   text-transform: uppercase;
-  font-weight: 300; }
+  font-family: "Alegreya Sans Light", sans-serif; }
   @media (min-width: 992px) {
     .home #bingo-jackpots h4 {
       font-size: 2rem; } }
+
+.home #bingo-jackpots .bingo-jackpots-subsection {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.home .toonie-pot {
+  width: 82px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2.5rem; }
+  @media (min-width: 688px) {
+    .home .toonie-pot {
+      width: 122px; } }

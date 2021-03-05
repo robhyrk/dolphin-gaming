@@ -8,10 +8,45 @@
 %p {
     font-size: rem(12px);
     line-height: rem(24px);
-    font-family: $primary-font;
+    font-family: $primary-font; 
+    color: #CBCCC6;
+    @include tablet {
+        font-size: rem(14px);
+        line-height: rem(32px);
+    }
     @include desktop {
         font-size: rem(16px);
         line-height: rem(32px);
+    }
+}
+
+%section-title {
+    padding-bottom: rem(24px);
+    letter-spacing: 2px;
+    @include tablet {
+        padding-bottom: rem(50px);
+    }
+}
+
+%section-subtitle {
+    padding-bottom: rem(24px);
+    letter-spacing: 2px;
+    @include tablet {
+        padding-bottom: rem(40px);
+    }
+}
+
+%section-title-lg {
+    padding-bottom: rem(40px);
+    letter-spacing: 2px;
+}
+
+%content-padding {
+    padding-top: rem(24px);
+    padding-bottom: rem(24px);
+    @include tablet {
+        padding-top: rem(32px);
+        padding-bottom: rem(32px);
     }
 }
 
@@ -19,12 +54,39 @@
     @extend %heading;
     font-size: rem(24px);
     line-height: rem(32px);
+    letter-spacing: 2px;
     @include tablet {
         font-size: rem(32px);
+        letter-spacing: 3px;
         line-height: rem(45px);
     }
     @include desktop {
         font-size: rem(56px);
-        line-height: rem(78px);
+        margin-bottom: rem(40px);
     }
+}
+
+%table-h {
+    font-family: $secondary-font-bold;
+    color: $light-color;
+}
+
+%table-bh {
+    font-family: $secondary-font-light;
+    letter-spacing: rem(2px);
+    color: $light-color;
+    letter-spacing: 0.25px;
+    padding-top: rem(8px);
+    padding-bottom: rem(8px);
+}
+
+%table-bd {
+    font-family: $secondary-font-bold;
+    color: $secondary-color;
+    font-weight: 700;
+    text-align: end;
+    letter-spacing: rem(2px);
+    letter-spacing: 0.25px;
+    padding-top: rem(8px);
+    padding-bottom: rem(8px);
 }

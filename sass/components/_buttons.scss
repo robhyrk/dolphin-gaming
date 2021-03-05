@@ -10,8 +10,14 @@
 }
 
 .btn-group {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    justify-content: initial;
+  }
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
 .btn {
@@ -19,11 +25,15 @@
   padding: rem(13px) rem(28px);
   text-transform: uppercase;
   letter-spacing: 1px;
+  @include desktop {
+    font-size: rem(18px);
+  }
 }
 
 .btn-primary {
   background-color: $secondary-color;
   border-color: $secondary-color;
+  border-width: 3px;
   &:hover {
       background-color: $primary-color;
       border-color: $secondary-color;
@@ -32,6 +42,8 @@
 .btn-secondary {
   background-color: $primary-color;
   border-color: $secondary-color;
+  border-width: 3px;
+  color: $secondary-color;
   &:hover {
       background-color: $dark;
       border-color: $secondary-color;
@@ -54,14 +66,19 @@
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
+    background-color: black;
     p {
         margin-bottom: 0;
         min-width:175px;
     }
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   .btn-animated :hover{
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
   }
   

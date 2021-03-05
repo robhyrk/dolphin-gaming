@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Fusi';
+    src: url('FusiNormal.eot');
+    src: url('FusiNormal.eot?#iefix') format('embedded-opentype'),
+        url('FusiNormal.woff2') format('woff2'),
+        url('FusiNormal.woff') format('woff'),
+        url('FusiNormal.ttf') format('truetype'),
+        url('FusiNormal.svg#FusiNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fusi';
+    src: url('FusiBold.eot');
+    src: url('FusiBold.eot?#iefix') format('embedded-opentype'),
+        url('FusiBold.woff2') format('woff2'),
+        url('FusiBold.woff') format('woff'),
+        url('FusiBold.ttf') format('truetype'),
+        url('FusiBold.svg#FusiBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

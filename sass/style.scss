@@ -16,10 +16,13 @@ Text Domain: dolphingaming
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-@import 'abstracts/placeholders';
 
 @import 'themes/theme';
 @import 'themes/admin';
+
+
+@import 'abstracts/placeholders';
+
 
 @import 'base/typography';
 

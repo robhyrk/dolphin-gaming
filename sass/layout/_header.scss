@@ -1,0 +1,33 @@
+header {
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        &:focus {
+            outline:none;
+        }
+    }
+    .navbar {
+        padding-left: rem(24px);
+        padding-right: rem(24px);
+        @include tablet {
+            padding-right:100px;
+            padding-left:100px;
+        }
+        @include desktop {
+            justify-content: flex-end;
+        }
+    }
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+        img {
+            width: 42px;
+        }
+    }
+    .collapse.navbar-collapse {
+        justify-content: flex-end;
+    }
+    .nav-link {
+        font-size: rem(18px);
+    }
+}

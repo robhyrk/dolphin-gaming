@@ -50,6 +50,26 @@ $font-family-base: $font-family-sans-serif;
     font-size: rem(12px);
     text-transform: uppercase;
     margin-bottom: 0;
+    text-align: center;
+    padding-left: rem(35px);
+    padding-right: rem(35px);
+    @include tablet {
+        padding-top: rem(25px);
+        padding-bottom: rem(25px);
+    }
+    @include desktop {
+        font-size: rem(18px);
+    }
+    .close {
+        font-size: 2rem;
+        padding: 0;
+        top: 15px;
+        right: 15px;
+        @include tablet {
+            top: 10px;
+            right: 25px;
+        }
+    }
     button {
         background: transparent;
         border: none;
@@ -59,25 +79,42 @@ $font-family-base: $font-family-sans-serif;
         color: white;
     }
 }
-.alert-dismissible {
-    padding: 1rem 4rem;
-    .close {
-        font-size: 2rem;
-    }
-}
 
 //Containers
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     padding-left: rem(24px);
     padding-right: rem(24px);
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
     @include tablet {
         padding-left: rem(100px);
         padding-right: rem(100px);
+        padding-top: rem(80px);
+        padding-bottom: rem(80px);
     }
     @include desktop {
         padding-left: rem(204px);
         padding-right: rem(204px);
+        padding-top: rem(80px);
+        padding-bottom: rem(80px);
     }
+}
+
+.container-footer {
+    padding-left: rem(24px);
+    padding-right: rem(24px);
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
+    @include tablet {
+        padding-left: rem(85px);
+        padding-right: rem(85px);
+        padding-top: rem(80px);
+        padding-bottom: rem(80px);
+    }
+}
+
+article {
+    min-height: 360px;
 }
 
 //WP Buttons
@@ -92,38 +129,6 @@ html, body {
     color: $light;
 }
 
-//Tables
-.table {
-    th, td {
-        @include tablet {
-            font-size: rem(24px);
-        }
-        @include desktop {
-            font-size: rem(32px);
-        }
-    }
-    thead th {
-        min-width: 80px;
-        @include tablet {
-            min-width: 160px;
-        }
-    }
-    tbody {
-        font-size: 14px;
-        th {
-            font-weight: 300;
-            padding-top: rem(12px);
-            padding-bottom: rem(12px);
-        }
-        td {
-            color: $secondary-color;
-            text-align: end;
-            padding-top: rem(12px);
-            padding-bottom: rem(12px);
-        }
-    }
-}
-
 //reset fonts
 p {
     margin-bottom: 0;
@@ -135,12 +140,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //reset table padding
+.table {
+    margin-bottom: 0;
+}
+
 .table td, .table th {
     padding: 0;
 }
 
 .table thead th {
-    vertical-align: top;
+    vertical-align: bottom;
+}
+
+.table {
+    tbody:before {
+        content:"@";
+        display:block;
+        line-height: rem(12px);
+        text-indent:-99999px;
+    }
 }
 
 //reset column padding
