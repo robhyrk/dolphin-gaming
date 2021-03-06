@@ -15,13 +15,18 @@ header {
         }
         @include desktop {
             justify-content: flex-end;
+            padding-top: rem(16px);
+            padding-bottom: rem(16px);
         }
     }
     .navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
         img {
-            width: 42px;
+            width: 28px;
+            @include tablet {
+                width: 42px;
+            }
         }
     }
     .collapse.navbar-collapse {

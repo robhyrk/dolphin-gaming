@@ -17,8 +17,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link active" href="#">How to Play<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Programs</a>
+                    <a class="nav-link" href="#">Packages</a>
+                    <a class="nav-link" href="#">Charity</a>
                     <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>

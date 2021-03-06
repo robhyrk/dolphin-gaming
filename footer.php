@@ -31,7 +31,7 @@
                                 <p>Phone 416 - 759 - 3066</p>
                                 <p>Hotline 416 - 759 - 2526</p>
                             </div>
-                            <div class="col-12 col-sm-4 social-icons d-flex align-items-center">
+                            <div class="col-12 col-sm-4 social-icons d-flex align-items-center justify-content-center">
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-facebook-f"></i>                            
                                 <i class="fab fa-twitter"></i>

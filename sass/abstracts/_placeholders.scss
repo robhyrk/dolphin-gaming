@@ -26,13 +26,23 @@
     @include tablet {
         padding-bottom: rem(50px);
     }
+    @include desktop {
+        padding-bottom: rem(40px);
+    }
 }
 
 %section-subtitle {
     padding-bottom: rem(24px);
     letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $heading-font;
     @include tablet {
         padding-bottom: rem(40px);
+        font-size: rem(30px);
+    }
+    @include desktop {
+        font-size: rem(50px);
     }
 }
 
@@ -48,6 +58,10 @@
         padding-top: rem(32px);
         padding-bottom: rem(32px);
     }
+    @include desktop {
+        padding-top: 0;
+        padding-bottom: rem(40px);
+    }
 }
 
 %h2 {
@@ -61,8 +75,9 @@
         line-height: rem(45px);
     }
     @include desktop {
-        font-size: rem(56px);
-        margin-bottom: rem(40px);
+        font-size: rem(50px);
+        letter-spacing: 2px;
+        padding-bottom: rem(40px);
     }
 }
 
@@ -78,6 +93,9 @@
     letter-spacing: 0.25px;
     padding-top: rem(8px);
     padding-bottom: rem(8px);
+    @include desktop {
+        font-family: $secondary-font-bold;
+    }
 }
 
 %table-bd {

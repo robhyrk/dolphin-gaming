@@ -98,7 +98,7 @@
         </div>
     </article>
 
-    <article id="bingo-callers" class="container">
+    <article id="bingo-callers" class="container max-width-lg">
         <h2 class="section-title">Today's Bingo Callers</h2>
         <div class="bingo-caller-list">
             <div><p>1 PM</p><p>TIFFANY</p></div>
@@ -112,13 +112,13 @@
     <article class="container">
     <div id="bingo-jackpots" >
             <h2 class="">Bingo Jackpot</h2>
-            <div class="bingo-jackpots-subsection">
+            <div class="bingo-jackpots-subsection max-width-lg">
                 <h3 class="section-subtitle">Specials</h3>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-3" scope="col">Game Name</th>
-                            <th class="col-5 text-center" scope="col">Jackpot</th>
+                            <th class="col-3  align-self-end" scope="col">Game Name</th>
+                            <th class="col-5 text-center align-self-end" scope="col">Jackpot</th>
                             <th class="col-4 text-right text-md-center" scope="col">Designated Number</th>
                         </tr>
                     </thead>
@@ -146,55 +146,55 @@
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection">
-                <h3 class="">UPIK 8</h3>
+            <div class="bingo-jackpots-subsection max-width">
+                <h3 class="section-subtitle upik-title">UPIK 8</h3>
                 <h4 class="section-subtitle text-center">20 Numbers or Less</h4>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-6" scope="col">Date</th>
+                            <th class="col-6  align-self-end" scope="col">Date</th>
                             <th class="col-6 text-right"  scope="col">Progressive Jackpot</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Monday Sep 21</th>
-                            <td class="col-6">$10,000 EST</td>
+                            <td class="col-6">$10,000</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Tuesday Sep 22</th>
-                            <td class="col-6">$10,000 EST</td>
+                            <td class="col-6">$10,000</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Wednesday Sep 23</th>
-                            <td class="col-6">$5,000 EST</td>
+                            <td class="col-6">$5,000</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Thusday Sep 24</th>
-                            <td class="col-6">$2,500 EST</td>
+                            <td class="col-6">$2,500</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Friday Sep 25</th>
-                            <td class="col-6">$2,500 EST</td>
+                            <td class="col-6">$2,500</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Saturday Sep 26</th>
-                            <td class="col-6">$2,500 EST</td>
+                            <td class="col-6">$2,500</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Sunday Sep 27</th>
-                            <td class="col-6">$2,500 EST</td>
+                            <td class="col-6">$2,500</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection">
+            <div class="bingo-jackpots-subsection max-width-lg">
                 <h3 class="section-subtitle">XTL</h3>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-3" scope="col">Ticket</th>
-                            <th class="col-5 text-center" scope="col">Jackpot</th>
+                            <th class="col-3  align-self-end" scope="col">Ticket</th>
+                            <th class="col-5 text-center  align-self-end" scope="col">Jackpot</th>
                             <th class="col-4 text-right text-md-center" scope="col">Designated Number</th>
                         </tr>
                     </thead>
@@ -229,12 +229,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection">
+            <div class="bingo-jackpots-subsection max-width">
                 <h3 class="section-subtitle">E-Bingo</h3>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-6"  scope="col">Game Name</th>
+                            <th class="col-6  align-self-end"  scope="col">Game Name</th>
                             <th class="col-6 text-right"  scope="col" class="text-right">Progressive Jackpot</th>
                         </tr>
                     </thead>
@@ -250,12 +250,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection">
+            <div class="bingo-jackpots-subsection max-width">
                 <h3 class="section-subtitle">Rapids</h3>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-6" scope="col">Game Name</th>
+                            <th class="col-6 align-self-end" scope="col">Game Name</th>
                             <th class="col-6 text-right" scope="col" class="text-right">designated Number</th>
                         </tr>
                     </thead>
