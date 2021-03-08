@@ -215,6 +215,10 @@ p {
     @extend %p;
 }
 
+.active {
+    color: $active-color !important;
+}
+
 .section-title {
     @extend %section-title;
 }

@@ -19,7 +19,7 @@
         <span></span>
         <p>See Today's Jackpot</p>
     </a>
-    </div>  
+</div>
 </div>
 
 <?php if( have_posts() ) :
@@ -87,7 +87,7 @@
                 <tbody class="large">
                     <tr>
                     <th scope="row">IGT</th>
-                    <td>$36,000 EST</td>
+                    <td class="active">$36,000 EST</td>
                     </tr>
                     <tr>
                     <th scope="row">Bathtime Bucks</th>
@@ -101,7 +101,7 @@
     <article id="bingo-callers" class="container max-width-lg">
         <h2 class="section-title">Today's Bingo Callers</h2>
         <div class="bingo-caller-list">
-            <div><p>1 PM</p><p>TIFFANY</p></div>
+            <div><p>1 PM</p><p class="active">TIFFANY</p></div>
             <div><p>4 PM</p><p>GARRET</p></div>
             <div><p>7 PM</p><p>GARRET</p></div>
             <div><p>10:15 AM</p><p>RED</p></div>
@@ -126,22 +126,22 @@
                         <tr class="d-flex">
                             <th class="col-3" scope="row">Accumulator</th>
                             <td class="col-5 text-center">$2,500</td>
-                            <td class="col-4 text-center">52</td>
+                            <td class="col-4 text-center active">52</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">Dolphin</th>
                             <td class="col-5 text-center">$10,000</td>
-                            <td class="col-4 text-center">52</td>
+                            <td class="col-4 text-center active">52</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">Super</th>
                             <td class="col-5 text-center">$5,000</td>
-                            <td class="col-4 text-center">53</td>
+                            <td class="col-4 text-center active">53</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">Progressive</th>
                             <td class="col-5 text-center">$10,000</td>
-                            <td class="col-4 text-center">55</td>
+                            <td class="col-4 text-center active">55</td>
                         </tr>
                     </tbody>
                 </table>
@@ -162,8 +162,8 @@
                             <td class="col-6">$10,000</td>
                         </tr>
                         <tr class="d-flex">
-                            <th class="col-6" scope="row">Tuesday Sep 22</th>
-                            <td class="col-6">$10,000</td>
+                            <th class="col-6 active" scope="row">Tuesday Sep 22</th>
+                            <td class="col-6 active">$10,000</td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-6" scope="row">Wednesday Sep 23</th>

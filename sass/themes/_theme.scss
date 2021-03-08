@@ -115,6 +115,10 @@ $font-family-base: $font-family-sans-serif;
         padding-top: rem(80px);
         padding-bottom: rem(80px);
     }
+    @include desktop {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
 }
 
 

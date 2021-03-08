@@ -21,6 +21,7 @@
             height: auto;
         }
         @include desktop {
+            top:-80px;
             height: auto;
         }
     }
@@ -244,6 +245,7 @@
     }
 
     #bingo-callers {
+        color: $light-color;
         @include tablet {
             padding-top: rem(0px);
             padding-bottom: rem(0px);
@@ -274,7 +276,6 @@
             margin-bottom: 0;
             font-family: $secondary-font-light;
             letter-spacing: 2px;
-            color: $light-color;
             font-weight: 300;
             &:first-child(){
                 text-align: end;

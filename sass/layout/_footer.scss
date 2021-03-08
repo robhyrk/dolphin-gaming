@@ -8,18 +8,54 @@
         padding-left: rem(24px);
         padding-top: rem(24px);
         padding-bottom: rem(24px);
+        @include desktop {
+            max-width: 792px;
+            padding-right: rem(0px);
+            padding-left: rem(0px);
+            margin: 0 auto;
+        }
+    }
+    @include desktop {
+        font-size: rem(16px);
+        letter-spacing: 1px;
     }
 }
 
 footer {
+    @include desktop {
+        display: flex;
+    }
     p {
         @include tablet {
             font-size: rem(12px);
             line-height: 22px;
         }
     }
+    .footer-logo-container {
+        @include desktop {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    .footer-logo {
+        margin: 0 auto;
+        display: block;
+        @include desktop {
+            margin-right: rem(30px);
+            width: 120px;
+        }
+    }
     .menu-footer-container {
-        width:100%;
+        max-width:274px;
+        margin: 0 auto;
+        @include desktop {
+            max-width: 100%;
+        }
+    }
+    .footer-menu-container {
+        @include desktop {
+            width: 510px;
+        }
     }
     #menu-footer {
         margin: 0 auto;
@@ -32,6 +68,12 @@ footer {
         padding-bottom: rem(40px);
         justify-content: space-evenly;
         width: 100%;
+        @include tablet {
+            padding-bottom: rem(35px);
+        }
+        @include desktop {
+            padding-bottom: rem(20px);
+        }
         a {
             color: white;
             text-transform: uppercase;
@@ -46,6 +88,17 @@ footer {
         text-transform: uppercase;
         padding-top: rem(40px);
         padding-bottom: rem(40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include tablet {
+            flex-direction: row;
+        }
+        @include desktop {
+            padding-top: rem(20px);
+            padding-bottom: rem(0px);
+            border-bottom: none;
+        }
         .phone-number {
             padding-top: rem(30px);
             padding-bottom: rem(30px);
@@ -59,6 +112,9 @@ footer {
         }
     }
     .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i {
             color: black;
             padding: 5px;
@@ -69,24 +125,56 @@ footer {
             margin: 0 10px;
         }
     }
+    .logo-area {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include desktop {
+            flex-direction: column;
+            max-width: 270px;
+            margin-left: auto;
+        }
+    }
     .logos {
         border-bottom: solid 1px white;
         padding-top: rem(40px);
         padding-bottom: rem(40px);
+        display: flex;
+        justify-content: space-between;
         @include tablet {
+            flex-basis: 50%;
             border-bottom: none;
             padding-right: rem(27.5px);
+            padding-top: rem(35px);
+            padding-bottom: rem(35px);
+        }
+        @include desktop {
+            padding-top: rem(0px);
+            padding-bottom: rem(0px);
+            padding-right: rem(0px);
+            margin-left: auto;
+            align-items: flex-end;
         }
         img {
             object-fit: contain;
+            @include desktop {
+                padding-left: rem(28px);
+                max-height: 42px;
+            }
         }
     }
     .footer-bottom {
         text-transform: uppercase;
         padding-top: rem(30px);
         @include tablet {
+            flex-basis: 50%;
             padding-top: rem(55px);
             padding-left: rem(27.5px);
+        }
+        @include desktop {
+            padding-top: rem(28px);
+            padding-left: rem(0px);
         }
         p {
             @include tablet {

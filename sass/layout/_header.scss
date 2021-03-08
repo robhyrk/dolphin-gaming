@@ -1,4 +1,6 @@
 header {
+    max-width: 1920px;
+    margin: 0 auto;
     .navbar-toggler {
         border: none;
         padding: 0;
@@ -34,5 +36,28 @@ header {
     }
     .nav-link {
         font-size: rem(18px);
+        font-family: 'Alegreya Sans Light';    
+        text-transform: uppercase;    
+        letter-spacing: 2px;
+        padding-left: rem(10px) !important;
+        padding-right: rem(10px) !important;
+        padding-top: rem(10px) !important;
+        padding-bottom: rem(10px) !important;
+    }
+    .language-icons {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: rem(10px);
+        @include desktop {
+            padding-left: rem(9px);
+        }
+        img {
+            padding-right: rem(16px);
+            @include desktop {
+                padding-left: rem(24px);
+                padding-right: rem(0px);
+            }
+        }
     }
 }

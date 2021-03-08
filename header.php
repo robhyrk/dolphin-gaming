@@ -17,11 +17,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">How to Play<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">How to Play<span class="sr-only">(current)</span></a>
                     <a class="nav-link" href="#">Programs</a>
                     <a class="nav-link" href="#">Packages</a>
                     <a class="nav-link" href="#">Charity</a>
                     <a class="nav-link" href="#">Contact</a>
+                </div>
+                <div class="language-icons">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/>
                 </div>
             </div>
         </nav>

@@ -87,10 +87,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, transparent, $secondary);
+    height: 4px;
+    background: $secondary;
     animation: animate1 3s linear infinite;
-    animation-delay: 1s;
+    // animation-delay: 1s;
   }
   @keyframes animate1{
     0%{
@@ -105,9 +105,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 2px;
+    width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, $secondary);
+    background: $secondary;
     animation: animate2 3s linear infinite;
   }
   
@@ -125,10 +125,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to left, transparent, $secondary);
+    height: 4px;
+    background: $secondary;
     animation: animate3 3s linear infinite;
-    animation-delay: 1s;
+    // animation-delay: 1s;
   }
   @keyframes animate3{
     0%{
@@ -143,9 +143,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 2px;
+    width: 4px;
     height: 100%;
-    background: linear-gradient(to top, transparent, $secondary);
+    background: $secondary;
     animation: animate4 3s linear infinite;
   }
   @keyframes animate4{
