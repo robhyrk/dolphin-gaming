@@ -1,0 +1,120 @@
+.packages {
+    @include desktop {
+        padding-bottom: rem(60px);
+    }
+    .packages-main {
+        @include tablet {
+            padding-right: rem(70px);
+            padding-left: rem(70px);
+            padding-bottom: 0;
+        }
+        @include desktop {
+            padding-right: rem(200px);
+            padding-left: rem(200px);
+        }
+        p {
+            @include tablet {
+                padding-bottom: rem(80px);
+                font-size: rem(16px);
+            }
+            @include desktop {
+                max-width: 586px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .packages-nav {
+        list-style: none;
+        padding: 0;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        color: $active-color;
+        letter-spacing: 2px;
+        font-size: rem(20px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 0;
+        padding-top: rem(20px);
+        padding-bottom: rem(80px);
+        margin: 0;
+        @include tablet {
+            flex-wrap: nowrap;
+            padding-bottom: rem(60px);
+            padding-top: rem(0px);
+        }
+        li {
+            flex-basis: 50%;
+            text-align: center;
+        }
+        a {
+            color: $active-color;
+            text-decoration: none;
+        }
+    }
+    .package-sub-section {
+        &>div {
+            @include tablet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        padding-bottom: rem(45px);
+        p {
+            padding-bottom: rem(16px);
+            @include tablet {
+                font-size: rem(18px);
+                width: 412px;
+            }
+            @include desktop {
+                font-size: rem(18px);
+                width: 580px;
+            }
+        }
+    }
+    .package-list {
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+    .package-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 0;
+        padding-bottom: rem(24px);
+        max-width: 412px;
+        margin: 0 auto;
+        @include desktop {
+            max-width: 100%;
+            grid-template-columns: 1fr;
+        }
+        h5 {
+           font-family: $secondary-font-bold;
+           text-transform: uppercase;
+           font-size: rem(14px);
+           @include tablet {
+               font-size: rem(18px);
+           }
+           @include desktop {
+            text-align: center;
+            font-size: rem(24px);
+        }
+        }
+        p {
+            font-family: $secondary-font-bold;
+            text-transform: uppercase;
+            font-size: rem(18px); 
+            text-align: end;
+            align-self:center;
+            @include tablet {
+                font-size: rem(24px);
+            }
+            @include desktop {
+                text-align: center;
+                font-size: rem(32px);
+            }
+        }
+    }
+}

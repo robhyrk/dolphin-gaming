@@ -43,6 +43,22 @@ $font-family-sans-serif: $primary-font;
 $font-family-monospace: $secondary-font;
 $font-family-base: $font-family-sans-serif;
 
+//Smooth Scroll
+html {
+    scroll-behavior: smooth;
+}
+
+//Toggles display on/off
+.toggle {
+    display: none;
+}
+
+
+//Global padding for text
+.inner-content {
+    @extend %content-padding;
+}
+
 //Alerts
 .alert {
     border-radius: 0rem;
@@ -93,14 +109,14 @@ $font-family-base: $font-family-sans-serif;
     @include tablet {
         padding-left: rem(100px);
         padding-right: rem(100px);
-        padding-top: rem(80px);
-        padding-bottom: rem(80px);
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
     }
     @include desktop {
         padding-left: rem(200px);
         padding-right: rem(200px);
-        padding-top: rem(120px);
-        padding-bottom: rem(120px);
+        padding-top: rem(60px);
+        padding-bottom: rem(60px);
     }
 }
 
@@ -123,7 +139,7 @@ $font-family-base: $font-family-sans-serif;
 
 
 .max-width-lg {
-    max-width: 996px;
+    max-width: 996px; 
     margin: 0 auto;
 }
 

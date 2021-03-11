@@ -19,6 +19,16 @@
         line-height: rem(32px);
     }
 }
+%package-title {
+    font-family: $secondary-font-bold;
+    font-size: rem(16px);
+    color: $light-color;
+    text-transform: uppercase;
+    padding-bottom: rem(8px);
+    @include tablet {
+        font-size: rem(18px);
+    }
+}
 
 %section-title {
     padding-bottom: rem(24px);
@@ -64,6 +74,24 @@
     }
 }
 
+%h1 {
+    @extend %heading;
+    font-size: rem(24px);
+    line-height: rem(32px);
+    letter-spacing: 2px;
+    padding-bottom: rem(20px);
+    @include tablet {
+        font-size: rem(40px);
+        letter-spacing: 3px;
+        padding-bottom: rem(20px);
+    }
+    @include desktop {
+        font-size: rem(50px);
+        letter-spacing: 6px;
+        padding-bottom: rem(70px);
+    }
+}
+
 %h2 {
     @extend %heading;
     font-size: rem(24px);
@@ -78,6 +106,19 @@
         font-size: rem(50px);
         letter-spacing: 2px;
         padding-bottom: rem(40px);
+    }
+}
+
+%h3 {
+    @extend %heading;
+    font-size: rem(24px);
+    line-height: rem(32px);
+    letter-spacing: 2px;
+    @include tablet {
+        font-size: rem(32px);
+    }
+    @include desktop {
+        font-size: rem(38px);
     }
 }
 

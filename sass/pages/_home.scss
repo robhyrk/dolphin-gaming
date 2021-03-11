@@ -1,4 +1,14 @@
 .home {
+    .container {
+        @include tablet {
+            padding-top: rem(80px);
+            padding-bottom: rem(80px);
+        }
+        @include desktop {
+            padding-top: rem(120px);
+            padding-bottom: rem(120px);
+        }
+    }
     .fullscreen-bg {
         position: absolute;
         right: 0;
@@ -24,9 +34,6 @@
             top:-80px;
             height: auto;
         }
-    }
-    .inner-content {
-        @extend %content-padding;
     }
     .hero-banner {
         position: relative;
@@ -62,7 +69,7 @@
         }
     }
     #bingo {
-        background: url('../../assets/img/home-bingo.jpg');
+        background: url('../../assets/img/dolphin-bingo-hall.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         @include tablet {
@@ -203,6 +210,7 @@
                         left: 200px;
                         top: 50px;
                         font-size: rem(20px);
+                        text-transform: uppercase;
                         @include tablet {
                             font-size: rem(32px);
                             top: 60px;
@@ -271,14 +279,14 @@
             padding: rem(12px);
             font-size: 16px;
             min-width: 83px;
-            text-align: start;
+            text-align: center;
             width: 100%;
             margin-bottom: 0;
             font-family: $secondary-font-light;
+            text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: 300;
             &:first-child(){
-                text-align: end;
                 @include desktop {
                     text-align: center;
                     text-decoration: underline;
@@ -286,9 +294,6 @@
             }
             @include tablet {
                 font-size: rem(24px);
-            }
-            @include desktop {
-                text-align: center;
             }
         }
     }

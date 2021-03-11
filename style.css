@@ -4746,6 +4746,12 @@ input[type="button"].btn-block {
     .collapsing {
       transition: none; } }
 
+html {
+  scroll-behavior: smooth; }
+
+.toggle {
+  display: none; }
+
 .alert {
   border-radius: 0rem;
   border: 0;
@@ -4801,8 +4807,8 @@ input[type="button"].btn-block {
     .container-xl, .container-lg, .container-md, .container-sm, .container-xl {
       padding-left: 6.25rem;
       padding-right: 6.25rem;
-      padding-top: 5rem;
-      padding-bottom: 5rem; } }
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; } }
   @media (min-width: 992px) {
     .container,
     .container-fluid,
@@ -4812,8 +4818,8 @@ input[type="button"].btn-block {
     .container-xl, .container-lg, .container-md, .container-sm, .container-xl {
       padding-left: 12.5rem;
       padding-right: 12.5rem;
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem; } }
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem; } }
 
 .container-footer {
   padding-left: 1.5rem;
@@ -4883,7 +4889,7 @@ h1, h2, h3, h4, h5, h6 {
   .container, .container-md, .container-sm {
     max-width: 100%; } }
 
-h2 {
+h1, h2, h3 {
   font-family: "Fusi Bold", sans-serif;
   text-transform: uppercase;
   color: #C3922E;
@@ -4902,6 +4908,16 @@ p {
     p {
       font-size: 1rem;
       line-height: 2rem; } }
+
+.package-title {
+  font-family: "Alegreya Sans Bold", sans-serif;
+  font-size: 1rem;
+  color: #CBCCC6;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem; }
+  @media (min-width: 688px) {
+    .package-title {
+      font-size: 1.125rem; } }
 
 .section-title {
   padding-bottom: 1.5rem;
@@ -4931,17 +4947,33 @@ p {
   padding-bottom: 2.5rem;
   letter-spacing: 2px; }
 
-.home .inner-content, .home #explore-gaming .main-desc {
+.inner-content, .home #explore-gaming .main-desc {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
   @media (min-width: 688px) {
-    .home .inner-content, .home #explore-gaming .main-desc {
+    .inner-content, .home #explore-gaming .main-desc {
       padding-top: 2rem;
       padding-bottom: 2rem; } }
   @media (min-width: 992px) {
-    .home .inner-content, .home #explore-gaming .main-desc {
+    .inner-content, .home #explore-gaming .main-desc {
       padding-top: 0;
       padding-bottom: 2.5rem; } }
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  padding-bottom: 1.25rem; }
+  @media (min-width: 688px) {
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      padding-bottom: 1.25rem; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 3.125rem;
+      letter-spacing: 6px;
+      padding-bottom: 4.375rem; } }
 
 h2 {
   font-size: 1.5rem;
@@ -4957,6 +4989,17 @@ h2 {
       font-size: 3.125rem;
       letter-spacing: 2px;
       padding-bottom: 2.5rem; } }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 2px; }
+  @media (min-width: 688px) {
+    h3 {
+      font-size: 2rem; } }
+  @media (min-width: 992px) {
+    h3 {
+      font-size: 2.375rem; } }
 
 .table thead th {
   font-family: "Alegreya Sans Bold", sans-serif;
@@ -5112,7 +5155,8 @@ h2 {
   font-display: swap; }
 
 .active {
-  color: #2EAAC3 !important; }
+  color: #2EAAC3 !important;
+  font-family: "Alegreya Sans Bold", sans-serif !important; }
 
 .alert {
   font-family: 'Alegreya Sans Light';
@@ -5449,8 +5493,8 @@ footer .footer-bottom {
   width: 100%;
   height: 4px;
   background: #C3922E;
-  -webkit-animation: animate1 3s linear infinite;
-          animation: animate1 3s linear infinite; }
+  -webkit-animation: animate1 4s linear infinite;
+          animation: animate1 4s linear infinite; }
 
 @-webkit-keyframes animate1 {
   0% {
@@ -5470,9 +5514,12 @@ footer .footer-bottom {
   right: 0;
   width: 4px;
   height: 100%;
+  transform: translateY(-100%);
   background: #C3922E;
-  -webkit-animation: animate2 3s linear infinite;
-          animation: animate2 3s linear infinite; }
+  -webkit-animation: animate2 4s linear infinite;
+          animation: animate2 4s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
 
 @-webkit-keyframes animate2 {
   0% {
@@ -5493,8 +5540,8 @@ footer .footer-bottom {
   width: 100%;
   height: 4px;
   background: #C3922E;
-  -webkit-animation: animate3 3s linear infinite;
-          animation: animate3 3s linear infinite; }
+  -webkit-animation: animate3 4s linear infinite;
+          animation: animate3 4s linear infinite; }
 
 @-webkit-keyframes animate3 {
   0% {
@@ -5514,9 +5561,12 @@ footer .footer-bottom {
   left: 0;
   width: 4px;
   height: 100%;
+  transform: translateY(100%);
   background: #C3922E;
-  -webkit-animation: animate4 3s linear infinite;
-          animation: animate4 3s linear infinite; }
+  -webkit-animation: animate4 4s linear infinite;
+          animation: animate4 4s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
 
 @-webkit-keyframes animate4 {
   0% {
@@ -5536,6 +5586,16 @@ footer .footer-bottom {
   .table td {
     border: none;
     text-transform: uppercase; }
+
+@media (min-width: 688px) {
+  .home .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem; } }
+
+@media (min-width: 992px) {
+  .home .container {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem; } }
 
 .home .fullscreen-bg {
   position: absolute;
@@ -5594,7 +5654,7 @@ footer .footer-bottom {
     padding: 0; } }
 
 .home #bingo {
-  background: url("../../assets/img/home-bingo.jpg");
+  background: url("../../assets/img/dolphin-bingo-hall.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   @media (min-width: 688px) {
@@ -5725,7 +5785,8 @@ footer .footer-bottom {
         .home #jackpots-home .jackpot-time .time-box span:nth-child(5) {
           left: 200px;
           top: 50px;
-          font-size: 1.25rem; }
+          font-size: 1.25rem;
+          text-transform: uppercase; }
           @media (min-width: 688px) {
             .home #jackpots-home .jackpot-time .time-box span:nth-child(5) {
               font-size: 2rem;
@@ -5784,24 +5845,20 @@ footer .footer-bottom {
     padding: 0.75rem;
     font-size: 16px;
     min-width: 83px;
-    text-align: start;
+    text-align: center;
     width: 100%;
     margin-bottom: 0;
     font-family: "Alegreya Sans Light", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300; }
-    .home #bingo-callers p:first-child {
-      text-align: end; }
-      @media (min-width: 992px) {
-        .home #bingo-callers p:first-child {
-          text-align: center;
-          text-decoration: underline; } }
+    @media (min-width: 992px) {
+      .home #bingo-callers p:first-child {
+        text-align: center;
+        text-decoration: underline; } }
     @media (min-width: 688px) {
       .home #bingo-callers p {
         font-size: 1.5rem; } }
-    @media (min-width: 992px) {
-      .home #bingo-callers p {
-        text-align: center; } }
 
 @media (min-width: 992px) {
   .home #bingo-jackpots h2 {
@@ -5836,3 +5893,114 @@ footer .footer-bottom {
   @media (min-width: 992px) {
     .home .toonie-pot {
       width: 277px; } }
+
+@media (min-width: 992px) {
+  .packages {
+    padding-bottom: 3.75rem; } }
+
+@media (min-width: 688px) {
+  .packages .packages-main {
+    padding-right: 4.375rem;
+    padding-left: 4.375rem;
+    padding-bottom: 0; } }
+
+@media (min-width: 992px) {
+  .packages .packages-main {
+    padding-right: 12.5rem;
+    padding-left: 12.5rem; } }
+
+@media (min-width: 688px) {
+  .packages .packages-main p {
+    padding-bottom: 5rem;
+    font-size: 1rem; } }
+
+@media (min-width: 992px) {
+  .packages .packages-main p {
+    max-width: 586px;
+    margin: 0 auto; } }
+
+.packages .packages-nav {
+  list-style: none;
+  padding: 0;
+  font-family: "Fusi Bold", sans-serif;
+  text-transform: uppercase;
+  color: #2EAAC3;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 0;
+  padding-top: 1.25rem;
+  padding-bottom: 5rem;
+  margin: 0; }
+  @media (min-width: 688px) {
+    .packages .packages-nav {
+      flex-wrap: nowrap;
+      padding-bottom: 3.75rem;
+      padding-top: 0rem; } }
+  .packages .packages-nav li {
+    flex-basis: 50%;
+    text-align: center; }
+  .packages .packages-nav a {
+    color: #2EAAC3;
+    text-decoration: none; }
+
+.packages .package-sub-section {
+  padding-bottom: 2.8125rem; }
+  @media (min-width: 688px) {
+    .packages .package-sub-section > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; } }
+  .packages .package-sub-section p {
+    padding-bottom: 1rem; }
+    @media (min-width: 688px) {
+      .packages .package-sub-section p {
+        font-size: 1.125rem;
+        width: 412px; } }
+    @media (min-width: 992px) {
+      .packages .package-sub-section p {
+        font-size: 1.125rem;
+        width: 580px; } }
+
+@media (min-width: 992px) {
+  .packages .package-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); } }
+
+.packages .package-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 0;
+  padding-bottom: 1.5rem;
+  max-width: 412px;
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .packages .package-details {
+      max-width: 100%;
+      grid-template-columns: 1fr; } }
+  .packages .package-details h5 {
+    font-family: "Alegreya Sans Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem; }
+    @media (min-width: 688px) {
+      .packages .package-details h5 {
+        font-size: 1.125rem; } }
+    @media (min-width: 992px) {
+      .packages .package-details h5 {
+        text-align: center;
+        font-size: 1.5rem; } }
+  .packages .package-details p {
+    font-family: "Alegreya Sans Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    text-align: end;
+    align-self: center; }
+    @media (min-width: 688px) {
+      .packages .package-details p {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .packages .package-details p {
+        text-align: center;
+        font-size: 2rem; } }

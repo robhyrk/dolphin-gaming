@@ -59,4 +59,27 @@ function starter_features() {
 
 add_action('after_setup_theme', 'starter_features');
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Dolphin Settings',
+		'menu_title'	=> 'Dolphin Settings',
+		'menu_slug' 	=> 'doplin-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false,
+        'position' => '2.1',
+        'icon_url' => 'dashicons-money-alt',
+	));
+	
+}
+
+add_filter('acf/format_value/type=number', 'fix_number', 30, 3);
+function fix_number($value, $post_id, $field) {
+  $value = number_format($value);
+  if($value == 0) {
+      return '/';
+  }
+  return $value;
+}
+
 ?>
