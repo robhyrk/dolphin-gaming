@@ -4845,9 +4845,6 @@ html {
   max-width: 792px;
   margin: 0 auto; }
 
-article {
-  min-height: 360px; }
-
 .wp-block-button__link {
   background-color: #C3922E; }
 
@@ -6004,3 +6001,139 @@ footer .footer-bottom {
       .packages .package-details p {
         text-align: center;
         font-size: 2rem; } }
+
+@media (min-width: 688px) {
+  .programs {
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem; } }
+
+.programs .programs .inner-content {
+  max-width: 788px;
+  margin: 0 auto; }
+
+.programs .daily-prizes .inner-content {
+  max-width: 588px;
+  margin: 0 auto; }
+
+.programs .inner-content {
+  padding-bottom: 2.5rem; }
+  @media (min-width: 688px) {
+    .programs .inner-content {
+      padding-bottom: 5rem; } }
+
+@media (min-width: 688px) {
+  .programs .container {
+    padding-left: 4.375rem;
+    padding-right: 4.375rem; } }
+
+@media (min-width: 992px) {
+  .programs .container {
+    padding-right: 13.875rem;
+    padding-left: 13.875rem; } }
+
+.programs .table-header {
+  font-size: 0.625rem;
+  font-family: "Alegreya Sans Bold", sans-serif;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 75px 50px 50px 50px 50px;
+  text-align: center;
+  border-bottom: solid 1px #C3922E; }
+  .programs .table-header h5 {
+    border-right: solid 1px #C3922E;
+    align-self: center;
+    min-height: 26px; }
+
+.programs .day {
+  font-size: 0.75rem;
+  width: 75px; }
+
+.programs .day-list h5 {
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+  text-transform: uppercase; }
+
+.programs .program-table thead th {
+  font-size: 0.625rem;
+  border-bottom: solid 1px #C3922E;
+  border-right: solid 1px #C3922E;
+  vertical-align: middle;
+  width: 50px; }
+  @media (min-width: 688px) {
+    .programs .program-table thead th {
+      font-size: 1.125rem;
+      width: 125px; } }
+  @media (min-width: 992px) {
+    .programs .program-table thead th {
+      font-size: 1.5rem; } }
+
+.programs .program-table thead .day {
+  font-size: 0.75rem; }
+  @media (min-width: 688px) {
+    .programs .program-table thead .day {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    .programs .program-table thead .day {
+      font-size: 1.5rem; } }
+
+.programs .program-table tbody {
+  font-size: 0.75rem; }
+  @media (min-width: 688px) {
+    .programs .program-table tbody {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    .programs .program-table tbody {
+      font-size: 1.5rem; } }
+  .programs .program-table tbody th {
+    border-right: solid 1px #C3922E;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+    font-family: "Alegreya Sans", sans-serif; }
+  .programs .program-table tbody::before {
+    content: none; }
+  .programs .program-table tbody td {
+    text-align: center;
+    border-right: solid 1px #C3922E;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+    font-size: 1rem; }
+  .programs .program-table tbody .active-program {
+    border-bottom: solid 1px #C3922E; }
+  .programs .program-table tbody #active-cell {
+    background-color: #C3922E; }
+  .programs .program-table tbody i {
+    color: white; }
+    @media (min-width: 992px) {
+      .programs .program-table tbody i {
+        font-size: 1.5rem; } }
+
+.programs .program-table .daily-table tbody tr {
+  border-bottom: solid 1px #C3922E; }
+
+.programs .program-table .daily-table tbody th {
+  padding: 0;
+  vertical-align: middle; }
+
+.programs .program-table .daily-table tbody tr {
+  color: white; }
+
+.programs .program-table .daily-table tbody td {
+  font-size: 0.75rem;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-family: "Alegreya Sans", sans-serif;
+  border-right: none;
+  color: white; }
+  @media (min-width: 688px) {
+    .programs .program-table .daily-table tbody td {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    .programs .program-table .daily-table tbody td {
+      font-size: 1.5rem; } }
+
+.programs .program-table .daily-table tr#active-row {
+  background-color: #C3922E; }
+  .programs .program-table .daily-table tr#active-row > td {
+    color: black; }
+  .programs .program-table .daily-table tr#active-row > th {
+    color: black; }
