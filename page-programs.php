@@ -22,36 +22,36 @@
                 </thead>
                 <tbody>
                     <tr class="text-center">
-                        <th class="" scope="row">Sunday</th>
+                        <th class="" scope="row">Sun</th>
                         <td rowspan="7" class="align-middle active-program"><i class="fas fa-download"></i></td>
                         <td rowspan="3" class="align-middle active-program"><i class="fas fa-download "></i></td>
                         <td rowspan="3" class="align-middle active-program"><i class="fas fa-download"></i></td>
                         <td rowspan="5" class="align-middle active-program"><i class="fas fa-download"></i></td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Monday</th>
+                        <th class="" scope="row">Mon</th>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Tuesday</th>
+                        <th class="" scope="row">Tues</th>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Wednesday</th>
+                        <th class="" scope="row">Wed</th>
                         <td id="active-cell" class="active-program"><i class="fas fa-download"></i></td>
                         <td class="active-program"><i class="fas fa-download"></i></td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Thursday</th>
+                        <th class="" scope="row">Thurs</th>
                         <td class="active-program"><i class="fas fa-download"></i></td>
                         <td class="active-program"><i class="fas fa-download"></i></td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Friday</th>
+                        <th class="" scope="row">Fri</th>
                         <td rowspan="2" class="align-middle active-program"><i class="fas fa-download"></td>
                         <td rowspan="2" class="align-middle active-program"><i class="fas fa-download"></td>
                         <td rowspan="2" class="align-middle active-program"><i class="fas fa-download"></td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Saturday</th>
+                        <th class="" scope="row">Sat</th>
                     </tr>
                 </tbody>
             </table>
@@ -72,54 +72,54 @@
                         <th  class="text-center" scope="col">10 am,</br> 1 pm, 4pm</th>
                         <th  class="text-center" scope="col">7 pm</th>
                         <th  class="text-center" scope="col">10:15 am</th>
-                        <th  class="text-center" scope="col">1 am</th>
+                        <th style="border-right:none" class="text-center" scope="col">1 am</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="text-center">
-                        <th class="" scope="row">Sunday</th>
+                        <th class="" scope="row">Sun</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Monday</th>
+                        <th class="" scope="row">Mon</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Tuesday</th>
+                        <th class="" scope="row">Tues</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center" id="active-row">
-                        <th class="" scope="row">Wednesday</th>
+                        <th class="" scope="row">Wed</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Thursday</th>
+                        <th class="" scope="row">Thurs</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Friday</th>
+                        <th class="" scope="row">Fri</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
                     <tr class="text-center">
-                        <th class="" scope="row">Saturday</th>
+                        <th class="" scope="row">Sat</th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>

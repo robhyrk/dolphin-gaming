@@ -9,6 +9,11 @@
             padding-bottom: rem(120px);
         }
     }
+    #explore-gaming {
+        a {
+            max-width: max-content;
+        }
+    }
     .fullscreen-bg {
         position: absolute;
         right: 0;
@@ -23,12 +28,13 @@
     }
     .fullscreen-bg__video {
         position: absolute;
-        top: 0;
+        // top: 0;
         left: 0;
         height: 100%;
         @include tablet {
             width: 100%;
             height: auto;
+            bottom: -20%;
         }
         @include desktop {
             top:-80px;
@@ -290,6 +296,7 @@
                 @include desktop {
                     text-align: center;
                     text-decoration: underline;
+                    text-underline-offset: 5px;
                 }
             }
             @include tablet {

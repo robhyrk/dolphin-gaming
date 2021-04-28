@@ -17,7 +17,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#">How to Play<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/how-to-play' ;?>">How to Play</a>
                     <a class="nav-link" href="<?php echo get_site_url() . '/programs' ;?>">Programs</a>
                     <a class="nav-link" href="<?php echo get_site_url() . '/packages' ;?>">Packages</a>
                     <a class="nav-link" href="<?php echo get_site_url() . '/charity' ;?>">Charity</a>

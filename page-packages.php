@@ -6,7 +6,8 @@
         <h1 class=""><?php the_title(); ?></h1>
         <p class="inner-content text-center">We offer a variety of packages to elevate your Bingo experience. 
             Each package provides a bundle of the specials that we offer for larger jackpots! 
-            Maximize your game with our Loaded Package.
+            Maximize your game with our Loaded Package.</br></br>
+            Tap <strong>one of our packages below</strong> to scroll down to that section for more details.
         </p>
         <nav>
             <ul class="packages-nav">
@@ -28,7 +29,7 @@
                     <p>6-Strips to DAB, 2 x 6-Strips for gecko. 3 of each special</p>
                 </div>
                 <div class="specials">
-                    <h4 class="package-title">Specials</h4>
+                    <h4 class="package-title">Specials:</h4>
                     <p>Accumulator, Dolphin, Super, XTL Ticket, Player’s Progressive, Toonie pot ticket</p>
                 </div>
             </div>
@@ -81,7 +82,7 @@
                     <p>6-Strips to DAB, 2 x 6-Strips for gecko. 3 of each special</p>
                 </div>
                 <div class="specials">
-                    <h4 class="package-title">Specials</h4>
+                    <h4 class="package-title">Specials:</h4>
                     <p>Accumulator, Dolphin, Super, XTL Ticket, Player’s Progressive, Toonie pot ticket</p>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                     <p>6-Strips to DAB, 2 x 6-Strips for gecko. 3 of each special</p>
                 </div>
                 <div class="specials">
-                    <h4 class="package-title">Specials</h4>
+                    <h4 class="package-title">Specials:</h4>
                     <p>Accumulator, Dolphin, Super, XTL Ticket, Player’s Progressive, Toonie pot ticket</p>
                 </div>
             </div>
@@ -178,16 +179,16 @@
         </div>
     </article>
 
-    <article id="mini" class="container">
+    <article id="min" class="container">
         <div class="max-width-lg">
-            <h3 class="section-title">Mini Package</h3>
+            <h3 class="section-title">Min Package</h3>
             <div class="package-sub-section max-width">
                 <div class="reg-games">
                     <h4 class="package-title">Regular Games:</h4>
                     <p>6-Strips to DAB, 2 x 6-Strips for gecko. 3 of each special</p>
                 </div>
                 <div class="specials">
-                    <h4 class="package-title">Specials</h4>
+                    <h4 class="package-title">Specials:</h4>
                     <p>Accumulator, Dolphin, Super, XTL Ticket, Player’s Progressive, Toonie pot ticket</p>
                 </div>
             </div>
@@ -240,7 +241,7 @@
                     <p>6-Strips to DAB, 2 x 6-Strips for gecko. 3 of each special</p>
                 </div>
                 <div class="specials">
-                    <h4 class="package-title">Specials</h4>
+                    <h4 class="package-title">Specials:</h4>
                     <p>Accumulator, Dolphin, Super, XTL Ticket, Player’s Progressive, Toonie pot ticket</p>
                 </div>
             </div>

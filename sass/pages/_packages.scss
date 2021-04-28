@@ -1,12 +1,14 @@
 .packages {
-    @include desktop {
+    @include tablet {
+        padding-top: rem(40px);
         padding-bottom: rem(60px);
     }
     .packages-main {
+        padding-bottom: 0;
         @include tablet {
             padding-right: rem(70px);
             padding-left: rem(70px);
-            padding-bottom: 0;
+            padding-top: rem(40px);
         }
         @include desktop {
             padding-right: rem(200px);
@@ -31,25 +33,36 @@
         color: $active-color;
         letter-spacing: 2px;
         font-size: rem(20px);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding-top: rem(16px);
         gap: 24px 0;
-        padding-top: rem(20px);
-        padding-bottom: rem(80px);
         margin: 0;
         @include tablet {
+            display: flex;
+            padding-top: rem(40px);
             flex-wrap: nowrap;
-            padding-bottom: rem(60px);
+            padding-bottom: rem(40px);
             padding-top: rem(0px);
+        }
+        @include desktop {
+            padding-bottom: rem(20px);
         }
         li {
             flex-basis: 50%;
             text-align: center;
+            padding-top: rem(4px);
+            padding-bottom: rem(4px);
+            @include tablet {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
         }
         a {
             color: $active-color;
             text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                text-underline-offset: 10px;
+            }
         }
     }
     .package-sub-section {
@@ -60,7 +73,6 @@
                 justify-content: space-between;
             }
         }
-        padding-bottom: rem(45px);
         p {
             padding-bottom: rem(16px);
             @include tablet {
@@ -74,9 +86,13 @@
         }
     }
     .package-list {
+        @include tablet {
+            padding-top: rem(80px);
+        }
         @include desktop {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
+            padding-top: rem(40px);
         }
     }
     .package-details {
@@ -94,6 +110,9 @@
            font-family: $secondary-font-bold;
            text-transform: uppercase;
            font-size: rem(14px);
+           &:first-child() {
+               color: $active-color;
+           }
            @include tablet {
                font-size: rem(18px);
            }

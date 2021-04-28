@@ -39,18 +39,20 @@ header {
         font-family: 'Alegreya Sans Light';    
         text-transform: uppercase;    
         letter-spacing: 2px;
-        padding-left: rem(10px) !important;
-        padding-right: rem(10px) !important;
-        padding-top: rem(10px) !important;
-        padding-bottom: rem(10px) !important;
+        @include desktop {
+            padding-left: rem(20px) !important;
+            padding-right: rem(20px) !important;
+            padding-top: rem(10px) !important;
+            padding-bottom: rem(10px) !important;
+        }
     }
     .language-icons {
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding: rem(10px);
+        padding-top: rem(10px);
         @include desktop {
-            padding-left: rem(9px);
+            padding: rem(10px);
         }
         img {
             padding-right: rem(16px);
