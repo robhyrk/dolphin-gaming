@@ -4,7 +4,7 @@ function cc_mime_types($mimes) {
     return $mimes;
    }
    add_filter('upload_mimes', 'cc_mime_types');
-
+   
 //Adds script and stylesheets
 function starter_files() {
     wp_enqueue_script('jquery');
@@ -24,7 +24,9 @@ function starter_files() {
     wp_enqueue_style('jquery-ui-css', "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css", NULL, 1.0);
     wp_enqueue_style('jquery-ui-smooth-css', "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.min.css", NULL, 1.0);
 
-    
+    wp_enqueue_style('animate-css', "https://unpkg.com/aos@2.3.1/dist/aos.css", NULL, 1.0);
+    wp_enqueue_script('animate-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', NULL,1.0);
+
     wp_enqueue_style('dolphin-styles', get_theme_file_uri() . '/build/css/style.min.css', NULL, 1.0);
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css2?family=Mallanna&display=swap");
 }

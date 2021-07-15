@@ -17,15 +17,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="<?php echo get_site_url() . '/how-to-play' ;?>">How to Play</a>
-                    <a class="nav-link" href="<?php echo get_site_url() . '/programs' ;?>">Programs</a>
-                    <a class="nav-link" href="<?php echo get_site_url() . '/packages' ;?>">Packages</a>
-                    <a class="nav-link" href="<?php echo get_site_url() . '/charity' ;?>">Charity</a>
-                    <a class="nav-link" href="<?php echo get_site_url() . '/contact' ;?>">Contact</a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/how-to-play' ;?>"><?php echo get_field('how_to_play', 'option');?></a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/programs' ;?>"><?php echo get_field('programs', 'option');?></a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/packages' ;?>"><?php echo get_field('packages', 'option');?></a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/charity' ;?>"><?php echo get_field('charity', 'option');?></a>
+                    <a class="nav-link" href="<?php echo get_site_url() . '/contact' ;?>"><?php echo get_field('contact', 'option');?></a>
                 </div>
                 <div class="language-icons">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/>
+                    <a href="/"><img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/></a>
+                    <a href="?lang=fr"><img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/></a>
                 </div>
             </div>
         </nav>

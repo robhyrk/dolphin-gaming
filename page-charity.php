@@ -5,8 +5,7 @@
     <article class="container charities-main">
         <h1 class=""><?php the_title(); ?></h1>
         <p class="inner-content text-center">
-            At Dolphin Gaming we are proud to support and be partnered with over 100 charities in local community. 
-            We have raised over $15 Million Dollars. 
+            <?php echo strip_tags(get_the_content());?>
         </p>
 
         <?php $images = get_field('charities', 'options'); ?>
