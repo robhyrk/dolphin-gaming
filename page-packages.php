@@ -11,7 +11,7 @@ $loaded = get_field("loaded_package");
 
 <div class="packages">
 
-    <article class="container packages-main">
+    <article data-aos="fade-up" class="container packages-main">
         <h1 class=""><?php the_title(); ?></h1>
         <p class="inner-content text-center">
             <?php echo strip_tags(get_the_content());?>
@@ -27,7 +27,7 @@ $loaded = get_field("loaded_package");
         </nav>
     </article>
 
-    <article id="regular" class="container">
+    <article data-aos="fade-up" id="regular" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $regular["title"];?></h3>
             <div class="package-sub-section max-width">
@@ -80,7 +80,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
-    <article id="double-up" class="container">
+    <article data-aos="fade-up" id="double-up" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $double["title"];?></h3>
             <div class="package-sub-section max-width">
@@ -133,7 +133,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
-    <article id="max" class="container">
+    <article data-aos="fade-up" id="max" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $max["title"];?></h3>
             <div class="package-sub-section max-width">
@@ -186,7 +186,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
-    <article id="min" class="container">
+    <article data-aos="fade-up" id="min" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $min["title"];?></h3>
             <div class="package-sub-section max-width">
@@ -239,7 +239,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
-    <article id="loaded" class="container">
+    <article data-aos="fade-up" id="loaded" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $loaded["title"];?></h3>
             <div class="package-sub-section max-width">

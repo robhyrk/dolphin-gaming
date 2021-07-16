@@ -23,6 +23,7 @@
       .slider-content {
           p {
               max-width: 200px;
+              margin: 0 auto;
               @include desktop {
                 max-width: 600px;
               }
@@ -110,7 +111,7 @@
           padding-top: rem(80px);
           padding-bottom: rem(80px);
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 1fr;
           grid-gap: 24px;
           @include tablet {
             grid-template-columns: repeat(4, 1fr);
@@ -122,8 +123,8 @@
       }
       .single-charity {
         .logo-container {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto;
             @include tablet {
                 width:78px;

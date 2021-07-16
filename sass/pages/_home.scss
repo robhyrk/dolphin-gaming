@@ -11,7 +11,9 @@
     }
     #explore-gaming {
         a {
-            max-width: max-content;
+            @include tablet {
+                margin: 0 auto;
+            }
         }
     }
     .fullscreen-bg {

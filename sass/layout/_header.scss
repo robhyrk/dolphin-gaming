@@ -1,6 +1,12 @@
 header {
     max-width: 1920px;
     margin: 0 auto;
+    .wpml-ls-legacy-list-horizontal a {
+        display: flex;
+    }
+    .wpml-ls-legacy-list-horizontal li:first-child a{
+        padding: 0;
+    }
     .navbar-toggler {
         border: none;
         padding: 0;

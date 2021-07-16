@@ -1,4 +1,10 @@
 .programs {
+    td:hover {
+        background-color: $secondary-color;
+        .fa-download:before {
+            color: $primary-color;
+        }
+    }
     @include tablet {
         padding-top: rem(40px);
         padding-bottom: rem(60px);
@@ -30,6 +36,13 @@
         @include desktop {
             padding-right: rem(222px);
             padding-left: rem(222px);
+        }
+    }
+    .programs {
+        td {
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     .table-header {
@@ -66,6 +79,7 @@
                 border-right: solid 1px $secondary-color;
                 vertical-align: middle;
                 width: 50px;
+                z-index: 100;
                 @include tablet {
                     font-size: rem(18px);
                     width: 125px;
@@ -110,9 +124,7 @@
             }
             .active-program {
                 border-bottom: solid 1px $secondary-color;
-            }
-            #active-cell {
-                background-color: $secondary-color;
+                border-top:  solid 1px $secondary-color;
             }
             i {
                 color: white;

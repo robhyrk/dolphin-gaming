@@ -16,7 +16,7 @@ date_default_timezone_set('America/Toronto');
         <video autoplay muted loop id="hero-video" class="fullscreen-bg__video">
             <source src="<?php echo get_template_directory_uri() . '/assets/img/intro-video.mp4' ;?>" type="video/mp4">
         </video>  
-    <a href="#" class="btn-animated">
+    <a href="#jackpots-home" class="btn-animated">
         <span></span>
         <span></span>
         <span></span>
@@ -31,7 +31,7 @@ date_default_timezone_set('America/Toronto');
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    <article id="explore-gaming" class="container">
+    <article id="explore-gaming" class="container"  data-aos="fade-up">
         <h2 class="main-title"><?php echo get_field('explore_dolphin_title');?></h2>
         <div class="main-desc">
             <p><?php echo get_field('explore_dolphin_text');?></p>
@@ -40,32 +40,32 @@ date_default_timezone_set('America/Toronto');
     </article>
 
     <article id="taptix" class="container">
-        <div class="inner-taptix-content">
+        <div class="inner-taptix-content"  data-aos="fade-left">
             <h2><?php echo get_field('tap_n_play_title');?></h2>
             <p class="inner-content text-right">
                 <?php echo get_field('tap_n_play_text');?>
             </p>
             <div class="btn-group">
                 <a class="btn btn-primary" href="<?php echo get_site_url() . '/how-to-play' ;?>"><?php echo get_field('tap_n_play_button');?></a>
-                <a class="btn btn-secondary ml-4" href="#tapnplay"><?php echo get_field('tap_n_play_button2');?></a>
+                <a class="btn btn-secondary" href="#tapnplay"><?php echo get_field('tap_n_play_button2');?></a>
             </div>
         </div>
     </article>
 
     <article id="bingo" class="container">
-        <div class="inner-bingo-content">
+        <div class="inner-bingo-content"   data-aos="fade-right">
             <h2><?php echo get_field('bingo_at_dolphin_title');?></h2>
             <p class="inner-content">
                 <?php echo get_field('bingo_at_dolphin_text');?>
             </p>
             <div class="btn-group">
-                <a href="<?php echo get_site_url() . '/how-to-play' ;?>"><button type="button" class="btn btn-primary mr-4"><?php echo get_field('bingo_at_dolphin_button');?></button></a>
-                <a class="btn btn-secondary ml-4" href="#bingo-jackpots"><?php echo get_field('bingo_at_dolphin_button2');?></a>
+                <a class="btn btn-primary" href="<?php echo get_site_url() . '/how-to-play' ;?>"><?php echo get_field('bingo_at_dolphin_button');?></a>
+                <a class="btn btn-secondary" href="#bingo-jackpots"><?php echo get_field('bingo_at_dolphin_button2');?></a>
             </div>
         </div>
     </article>
 
-    <article id="jackpots-home" class="container">
+    <article  data-aos="fade-up" id="jackpots-home" class="container">
     <?php  $current_session = new DateTime(get_field('current_session', 'option'));?>
         <h2><?php echo get_field('current_session');?></h2>
         <h2><?php echo $current_session->format('l M j'); ?></h2>
@@ -114,7 +114,7 @@ date_default_timezone_set('America/Toronto');
         </div>
     </article>
 
-    <article id="bingo-callers" class="container max-width-lg <?php echo $hide_section['hide_bingo_callers'] ? 'toggle' : null ;?>">
+    <article data-aos="fade-up" id="bingo-callers" class="container max-width-lg <?php echo $hide_section['hide_bingo_callers'] ? 'toggle' : null ;?>">
         <?php $bingo_callers = get_field('bingo_callers', 'options') ;?>
         <h2 class="section-title"><?php echo get_field('todays_bingo_callers_title');?></h2>
         <div class="bingo-caller-list">
@@ -127,7 +127,7 @@ date_default_timezone_set('America/Toronto');
         </div>
     </article>
 
-    <article class="container">
+    <article data-aos="fade-up"  class="container">
     <div id="bingo-jackpots" class="<?php echo $hide_section['hide_bingo_specials'] ? 'toggle' : null ;?>">
             <h2 class=""><?php echo get_field('bingo_jackpot_title');?></h2>
             <div class="bingo-jackpots-subsection max-width-lg">

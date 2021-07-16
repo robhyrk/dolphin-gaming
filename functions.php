@@ -103,4 +103,9 @@ function fix_number($value, $post_id, $field) {
   return $value;
 }
 
+add_action( 'admin_init', 'my_remove_admin_menus' );
+function my_remove_admin_menus() {
+    remove_menu_page( 'edit-comments.php' );
+}
+
 ?>

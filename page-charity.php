@@ -2,7 +2,7 @@
 
 <div class="charity">
 
-    <article class="container charities-main">
+    <article data-aos="fade-up" class="container charities-main">
         <h1 class=""><?php the_title(); ?></h1>
         <p class="inner-content text-center">
             <?php echo strip_tags(get_the_content());?>
@@ -49,7 +49,7 @@
         </div>
     </article>
     <hr>
-    <article class="container charities-list">
+    <article data-aos="fade-up" class="container charities-list">
         <?php foreach( $images as $image ): ?>
             <div class="swiper-slide text-center single-charity">
                 <div class="logo-container">                        

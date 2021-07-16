@@ -23,10 +23,12 @@
                     <a class="nav-link" href="<?php echo get_site_url() . '/charity' ;?>"><?php echo get_field('charity', 'option');?></a>
                     <a class="nav-link" href="<?php echo get_site_url() . '/contact' ;?>"><?php echo get_field('contact', 'option');?></a>
                 </div>
-                <div class="language-icons">
-                    <a href="/"><img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/></a>
-                    <a href="?lang=fr"><img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/></a>
-                </div>
+                <!-- <div class="language-icons"> -->
+                <?php echo do_action('wpml_add_language_selector');?>
+
+                    <!-- <a href="/"><img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/></a>
+                    <a href="?lang=fr"><img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/></a> -->
+                <!-- </div> -->
             </div>
         </nav>
     </header>

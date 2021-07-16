@@ -11,9 +11,12 @@
 
 .btn-group {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px 0;
   @include tablet {
     justify-content: initial;
+    flex-direction: row;
+    gap: 0 50px;
   }
   @include desktop {
     justify-content: flex-start;
@@ -25,6 +28,9 @@
   padding: rem(13px) rem(28px);
   text-transform: uppercase;
   letter-spacing: 1px;
+  @include tablet {
+    width: max-content;
+  }
   @include desktop {
     font-size: rem(18px);
   }

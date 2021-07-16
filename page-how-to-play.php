@@ -8,7 +8,7 @@ $glossaryt = get_field("glossary_tap_n_play");
 
 <div class="play">
 
-    <article class="container packages-main max-width">
+    <article data-aos="fade-up" class="container packages-main max-width">
         <div class="max-width">
             <h1 class=""><?php the_title(); ?></h1>
             <p class="inner-content text-center">
@@ -22,7 +22,7 @@ $glossaryt = get_field("glossary_tap_n_play");
     </article>
 
     <div id="bingo-display">
-        <article class="container">
+        <article data-aos="fade-up" class="container">
         <div class="max-width">
             <div class="inner-section">
                 <h4><?php echo $bingo["object_game"] ;?></h4>
@@ -45,9 +45,9 @@ $glossaryt = get_field("glossary_tap_n_play");
             </div>
         </div>
         </article>
-        <img class="img-fluid mise-mobile" src="<?php echo $bingo["place_en_mise_bingo_mobile"] ;?>"/>
-        <img class="img-fluid mise-desktop" src="<?php echo $bingo["place_en_mise_bingo"] ;?>"/>
-        <article class="container" id="winning-patterns">
+        <img data-aos="fade-up" class="img-fluid mise-mobile" src="<?php echo $bingo["place_en_mise_bingo_mobile"] ;?>"/>
+        <img data-aos="fade-up" class="img-fluid mise-desktop" src="<?php echo $bingo["place_en_mise_bingo"] ;?>"/>
+        <article data-aos="fade-up" class="container" id="winning-patterns">
             <div class="inner-section">
                 <h3><?php echo $patterns["patterns_title"] ;?></h3>
                 <div class="dropdown select-pattern text-center">
@@ -141,7 +141,7 @@ $glossaryt = get_field("glossary_tap_n_play");
             </div>
         </article>
 
-        <article class="container glossary">
+        <article data-aos="fade-up" class="container glossary">
             <div class="inner-section-alt">
                 <h3><?php echo $glossaryb["glossary_title"] ;?></h3>
             </div>
@@ -207,7 +207,7 @@ $glossaryt = get_field("glossary_tap_n_play");
         </article>
         <img class="img-fluid tap-n-play-spread" src="<?php echo $tapnplay["place_en_mise"] ;?>"/>
         <img class="img-fluid tap-n-play-spread-mobile" src="<?php echo $tapnplay["place_en_mise_mobile"] ;?>"/>
-        <article class="container" id="glossary">
+        <article data-aos="fade-up" class="container" id="glossary">
             <div class="inner-section-alt">
                 <h3><?php echo $glossaryb["glossary_title"] ;?></h3>
             </div>

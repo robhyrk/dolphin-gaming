@@ -1,4 +1,6 @@
 jQuery(document).ready(function($){
+    AOS.init();
+
     const swiper = new Swiper('.swiper-container', {
         loop: true,
         // If we need pagination

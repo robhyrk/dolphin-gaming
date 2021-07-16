@@ -59,7 +59,7 @@
             </table>
         </div>
     </article>
-
+    <?php $timestamp = time();?>
     <article class="container packages-main daily-prizes">
         <h1 class=""><?php echo $content["daily_prizes_title"] ;?></h1>
         <p class="inner-content text-center">
@@ -77,49 +77,49 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="text-center">
+                    <tr class="text-center" id="<?php echo date('D', $timestamp) === 'Sun' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["sun"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center">
+                    <tr class="text-center" id="<?php echo date('D', $timestamp) === 'Mon' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["mon"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center">
+                    <tr class="text-center" id="<?php echo date('D', $timestamp) === 'Tues' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["tues"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center" id="active-row">
+                    <tr class="text-center"  id="<?php echo date('D', $timestamp) === 'Wed' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["wed"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center">
+                    <tr class="text-center"  id="<?php echo date('D', $timestamp) === 'Thu' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["thurs"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center">
+                    <tr class="text-center" id="<?php echo date('D', $timestamp) === 'Fri' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["fri"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
                     </tr>
-                    <tr class="text-center">
+                    <tr class="text-center"  id="<?php echo date('D', $timestamp) === 'Sat' ?  'active-row' : null ;?>">
                         <th class="" scope="row"><?php echo $content["sat"] ;?></th>
                         <td class="align-middle">10 X $500</td>
                         <td class="align-middle">10 X $500</td>
