@@ -67,8 +67,8 @@ $glossaryt = get_field("glossary_tap_n_play");
                         <a class="dropdown-item" href="top-3-lines"><?php echo $patterns["top_3_lines"] ;?></a>
                         <a class="dropdown-item" href="bottom-3-line"><?php echo $patterns["bottom_3_lines"] ;?></a>
                         <a class="dropdown-item" href="bottom-2-line"><?php echo $patterns["bottom_2_lines"] ;?></a>
-                        <a class="dropdown-item" href="any-1-line-hard"><?php echo $patterns["1_line_the_hardway"] ;?></a>
-                        <a class="dropdown-item" href="any-2-line-hard"><?php echo $patterns["2_line_the_hardway"] ;?></a>
+                        <a class="dropdown-item" href="1-line-hard"><?php echo $patterns["1_line_the_hardway"] ;?></a>
+                        <a class="dropdown-item" href="2-line-hard"><?php echo $patterns["2_line_the_hardway"] ;?></a>
                     </div>
             </div>
             <div class="winning-patterns">

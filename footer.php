@@ -1,9 +1,10 @@
 <?php wp_footer();?>
+<?php $title = post_type_archive_title( '', false );?>
     </main>
-        <div class="age-gate text-center">
+        <div class="age-gate text-center"  style="display: <?php echo $title == 'Dolphin TV' ? 'none' : 'block' ;?>">
             <p><?php echo get_field('footer_message', 'option');?></p>
         </div>
-        <footer class="container-footer">
+        <footer class="container-footer" style="display: <?php echo $title == 'Dolphin TV' ? 'none' : 'block' ;?>">
             <div class="footer-logo-container">
                 <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/assets/svg/dolphin-gaming-logo-full.svg';?>"/>
             </div>

@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
-    <header>
+<?php $title = post_type_archive_title( '', false );?>
+
+    <header style="display: <?php echo $title == 'Dolphin TV' ? 'none' : 'block' ;?>">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="<?php echo get_home_url();?>">
                 <img src="<?php echo get_template_directory_uri() . '/assets/svg/dolphin-gaming-logo.svg';?>"/>
@@ -23,13 +25,8 @@
                     <a class="nav-link" href="<?php echo get_site_url() . '/charity' ;?>"><?php echo get_field('charity', 'option');?></a>
                     <a class="nav-link" href="<?php echo get_site_url() . '/contact' ;?>"><?php echo get_field('contact', 'option');?></a>
                 </div>
-                <!-- <div class="language-icons"> -->
                 <?php echo do_action('wpml_add_language_selector');?>
-
-                    <!-- <a href="/"><img src="<?php echo get_template_directory_uri() . '/assets/svg/can-flag.svg';?>"/></a>
-                    <a href="?lang=fr"><img src="<?php echo get_template_directory_uri() . '/assets/svg/quebec-flag.svg';?>"/></a> -->
-                <!-- </div> -->
             </div>
         </nav>
     </header>
-<main>
+<main style="max-width: <?php echo $title == 'Dolphin TV' ? '100%' : null ;?>">

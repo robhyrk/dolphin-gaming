@@ -1,6 +1,6 @@
 <?php get_header(); 
 $hide_section = get_field('hide_section', 'option');
-date_default_timezone_set('America/Toronto');
+date_default_timezone_set('America/New_York');
 ?>
 
 
@@ -13,7 +13,7 @@ date_default_timezone_set('America/Toronto');
 
 <div class="hero-banner">
     <div class="fullscreen-bg">
-        <video autoplay muted loop id="hero-video" class="fullscreen-bg__video">
+        <video autoplay muted playsinline loop id="hero-video" class="fullscreen-bg__video">
             <source src="<?php echo get_template_directory_uri() . '/assets/img/intro-video.mp4' ;?>" type="video/mp4">
         </video>  
     <a href="#jackpots-home" class="btn-animated">
@@ -119,10 +119,11 @@ date_default_timezone_set('America/Toronto');
         <h2 class="section-title"><?php echo get_field('todays_bingo_callers_title');?></h2>
         <div class="bingo-caller-list">
             <?php $currentTime = date(" H", strtotime('now')); ?>
-            <div><p>1 PM</p><p class="<?php echo  $currentTime <= '13' &&  $currentTime > '01' ? 'active' : null ;?>"><?php echo $bingo_callers['10_am'] ;?></p></div>
+			<div><p>10 AM</p><p class="<?php echo  $currentTime <= '13' &&  $currentTime > '01' ? 'active' : null ;?>"><?php echo $bingo_callers['10_am'] ;?></p></div>
+            <div><p>1 PM</p><p class="<?php echo  $currentTime <= '13' &&  $currentTime > '01' ? 'active' : null ;?>"><?php echo $bingo_callers['1_pm'] ;?></p></div>
             <div><p>4 PM</p><p class="<?php echo  $currentTime <= '16' &&  $currentTime > '13' ? 'active' : null ;?>"><?php echo $bingo_callers['4_pm'] ;?></p></div>
-            <div><p>7 PM</p><p class="<?php echo $currentTime <= '19' &&  $currentTime > '16' ? 'active' : null ;?>"><?php echo $bingo_callers['7_pm'] ;?>T</p></div>
-            <div><p>10:15 AM</p><p class="<?php echo  $currentTime <= '22' &&  $currentTime > '19' ? 'active' : null ;?>"><?php echo $bingo_callers['1015_pm'] ;?></p></div>
+            <div><p>7 PM</p><p class="<?php echo $currentTime <= '19' &&  $currentTime > '16' ? 'active' : null ;?>"><?php echo $bingo_callers['7_pm'] ;?></p></div>
+            <div><p>10:15 PM</p><p class="<?php echo  $currentTime <= '22' &&  $currentTime > '19' ? 'active' : null ;?>"><?php echo $bingo_callers['1015_pm'] ;?></p></div>
             <div><p>1 AM</p><p class="<?php echo  $currentTime <= '01' &&  $currentTime > '22' ? 'active' : null ;?>"><?php echo $bingo_callers['1_am'] ;?></p></div>
         </div>
     </article>
@@ -214,7 +215,7 @@ date_default_timezone_set('America/Toronto');
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-3  align-self-end" scope="col"><?php echo get_field('ticket');?></th>
+                            <th class="col-3  align-self-end" scope="col"><?php echo get_field('game_name');?></th>
                             <th class="col-5 text-center  align-self-end" scope="col"><?php echo get_field('jackpot');?></th>
                             <th class="col-4 text-right text-md-center" scope="col"><?php echo get_field('designated_number');?></th>
                         </tr>
@@ -222,17 +223,17 @@ date_default_timezone_set('America/Toronto');
                     <tbody>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">X</th>
-                            <td class="col-5 text-center">$10,000</td>
+                            <td class="col-5 text-center">$<?php echo $xtl['x_jackpot'] ;?></td>
                             <td class="col-4 text-md-center"><?php echo $xtl['x'] ;?></td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">T</th>
-                            <td class="col-5 text-center">$10,000</td>
+                            <td class="col-5 text-center">$<?php echo $xtl['t_jackpot'] ;?></td>
                             <td class="col-4 text-md-center"><?php echo $xtl['t'] ;?></td>
                         </tr>
                         <tr class="d-flex">
                             <th class="col-3" scope="row">L</th>
-                            <td class="col-5 text-center">$10,000</td>
+                            <td class="col-5 text-center">$<?php echo $xtl['l_jackpot'] ;?></td>
                             <td class="col-4 text-md-center"><?php echo $xtl['l'] ;?></td>
                         </tr>
                     </tbody>
@@ -250,50 +251,57 @@ date_default_timezone_set('America/Toronto');
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection max-width <?php echo $hide_section['hide_e_bingo'] ? 'toggle' : null ;?>">
+            <div class="bingo-jackpots-subsection max-width-lg <?php echo $hide_section['hide_e_bingo'] ? 'toggle' : null ;?>">
                 <h3 class="section-subtitle"><?php echo get_field('e-bingo_title');?></h3>
                 <?php $ebingo = get_field('e-bingo', 'option');?>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-6  align-self-end"  scope="col"><?php echo get_field('game_name');?></th>
-                            <th class="col-6 text-right"  scope="col" class="text-right"><?php echo get_field(' progressive_jackpot');?></th>
+                            <th class="col-3  align-self-end"  scope="col"><?php echo get_field('game_name');?></th>
+                            <th class="col-5 text-center  align-self-end" scope="col"><?php echo get_field('designated_number');?></th>
+                            <th class="col-4 text-right text-md-center"  scope="col" class="text-right"><?php echo get_field('progressive_jackpot');?></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="d-flex">
-                            <th class="col-6" scope="row"><?php echo get_field('turbo_title');?></th>
-                            <td class="col-6">$<?php echo $ebingo['turbo'] ;?></td>
+                            <th class="col-3" scope="row"><?php echo get_field('turbo_title');?></th>
+                            <td class="col-5 text-center"><?php echo $ebingo['turbo_number'] ;?></td>
+                            <td class="col-4 text-md-center">$<?php echo $ebingo['turbo'] ;?></td>
                         </tr>
                         <tr class="d-flex">
-                            <th class="col-6"  scope="row"><?php echo get_field('pod_progressive');?></th>
-                            <td class="col-6">$<?php echo $ebingo['pod_progressive'] ;?></td>
+                            <th class="col-3"  scope="row"><?php echo get_field('pod_progressive');?></th>
+                            <td class="col-5 text-center"><?php echo $ebingo['pod_progressive_number'] ;?></td>
+                            <td class="col-4 text-md-center">$<?php echo $ebingo['pod_progressive'] ;?></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="bingo-jackpots-subsection max-width <?php echo $hide_section['hide_rapids'] ? 'toggle' : null ;?>">
+            <div class="bingo-jackpots-subsection max-width-lg <?php echo $hide_section['hide_rapids'] ? 'toggle' : null ;?>">
                 <h3 class="section-subtitle"><?php echo get_field('daily_rapids');?></h3>
                 <?php $rapids = get_field('rapids', 'options') ;?>
                 <table class="table">
                     <thead>
                         <tr class="d-flex">
-                            <th class="col-6 align-self-end" scope="col"><?php echo get_field('game_name');?></th>
-                            <th class="col-6 text-right" scope="col" class="text-right"><?php echo get_field('designated_number');?></th>
+                            <th class="col-3 align-self-end" scope="col"><?php echo get_field('game_name');?></th>
+                            <th class="col-5 text-center  align-self-end" scope="col"><?php echo get_field('designated_number');?></th>
+                            <th class="col-4 text-right text-md-center"  scope="col" class="text-right"><?php echo get_field('progressive_jackpot');?></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="d-flex">
-                            <th class="col-6"  scope="row"><?php echo get_field('daily_rapids');?></th>
-                            <td class="col-6 text-md-center"><?php echo $rapids['daily'] ;?></td>
+                            <th class="col-3"  scope="row"><?php echo get_field('daily_rapids');?></th>
+                            <td class="col-5 text-center"><?php echo $rapids['daily'] ;?></td>
+                            <td class="col-4 text-md-center"><?php echo $rapids['daily_jackpot'] ;?></td>
+                        </tr>
+                        <tr class="d-flex <?php echo $hide_section['hide_sunday_rapids'] ? 'toggle' : null ;?>">
+                            <th class="col-3"  scope="row"><?php echo get_field('sundays_rapids');?></th>
+                            <td class="col-5 text-center"><?php echo $rapids['sunday_rapids'] ;?></td>
+                            <td class="col-4 text-md-center"><?php echo $rapids['sunday_jackpot'] ;?></td>
                         </tr>
                         <tr class="d-flex">
-                            <th class="col-6"  scope="row"><?php echo get_field('sundays_rapids');?></th>
-                            <td class="col-6 text-md-center"><?php echo $rapids['sunday_rapids'] ;?></td>
-                        </tr>
-                        <tr class="d-flex">
-                            <th class="col-6"  scope="row"><?php echo get_field('moneyball');?></th>
-                            <td class="col-6 text-md-center"><?php echo $rapids['moneyball_rapids'] ;?></td>
+                            <th class="col-3"  scope="row"><?php echo get_field('moneyball');?></th>
+                            <td class="col-5 text-center"><?php echo $rapids['moneyball_rapids'] ;?></td>
+                            <td class="col-4 text-md-center"><?php echo $rapids['moneyball_jackpot'] ;?></td>
                         </tr>
                     </tbody>
                 </table>

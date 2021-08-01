@@ -41,6 +41,7 @@ function starter_features() {
     register_nav_menu('footer-menu', 'Footer Menu');
 
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
     
     //Stupid Proof Gutenburg Editor
     // Disable Gutenberg Custom Colors
@@ -90,9 +91,29 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false,
         'position' => '2.1',
         'icon_url' => 'dashicons-money-alt',
-	));
-	
+	));	
 }
+
+function dolphin_post_types() {
+    //Event Post Type
+    register_post_type('slides', array(
+        'has_archive' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'rewrite' => array('slug' => 'display-reel'),
+        'public' => true,
+        'labels' => array(
+            'name' => 'Dolphin TV',
+            'add_new_item' => 'Add New Slide',
+            'edit_item' => 'Edit Slide',
+            'all_items' => 'All Slides',
+            'singular_name' => 'Slide'
+        ),
+        'menu_icon' => 'dashicons-video-alt3'
+    ));
+}
+add_action('init', 'dolphin_post_types');
+
 
 add_filter('acf/format_value/type=number', 'fix_number', 30, 3);
 function fix_number($value, $post_id, $field) {

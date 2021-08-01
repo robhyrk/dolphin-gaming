@@ -19,12 +19,12 @@ $contact = get_field("content");
                 </div>
                 <div class="hotline">
                     <p><?php echo $contact["hotline_title"] ;?></p>
-                    <p class="number">416 - 759 - 2526 </p>
+                    <p class="number">416 - 759 - 2565</p>
                 </div>
             </div>
             <div class="email">
                 <p><?php echo $contact["email_title"] ;?></p>
-                <p class="number"><?php echo $contact["address"] ;?></p>
+                <a href="mailto:contact@dolphingaming.ca" class="number">contact@dolphingaming.ca</a>
             </div>
             <div class="social-icons">
                 <p><?php echo $contact["message_us_on_social"] ;?></p>

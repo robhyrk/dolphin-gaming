@@ -59,8 +59,12 @@
             </table>
         </div>
     </article>
-    <?php $timestamp = time();?>
-    <article class="container packages-main daily-prizes">
+    
+
+	<?php $timestamp = time();?>
+    
+	<!-- DAILY PRIZES -->
+	<article class="container packages-main daily-prizes">
         <h1 class=""><?php echo $content["daily_prizes_title"] ;?></h1>
         <p class="inner-content text-center">
         <?php echo $content["daily_prizes"] ;?>

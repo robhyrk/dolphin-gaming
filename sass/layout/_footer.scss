@@ -179,6 +179,16 @@ footer {
     }
 }
 
+.gca-link {
+	color: #c3922e;
+}
+
+.gca-link:hover {
+		color: #2eaac3;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 .social-icons{
     display: flex;
     justify-content: center;

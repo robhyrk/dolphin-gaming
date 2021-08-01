@@ -41,7 +41,12 @@
     .programs {
         td {
             &:hover{
-                cursor: pointer;
+                cursor:initial;
+                background-color: initial;
+                .fa-download:before {
+                    color: #c3922e;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -1,3 +1,17 @@
+
+// @media (min-width: 390px) {
+// 	.charity .charities-list {
+// 		grid-template-columns: repeat(2,1fr);
+// }
+// }
+
+// @media (min-width: 768px) {
+// .charity .charities-list {
+//     grid-template-columns: repeat(4,1fr);
+// }
+
+
+
 .charity {
     .swiper-container {
         width: 100%;
@@ -111,7 +125,7 @@
           padding-top: rem(80px);
           padding-bottom: rem(80px);
           display: grid;
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
           grid-gap: 24px;
           @include tablet {
             grid-template-columns: repeat(4, 1fr);

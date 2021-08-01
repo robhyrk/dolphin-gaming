@@ -23,6 +23,14 @@ jQuery(document).ready(function($){
 
       });
 
+      const swiper2 = new Swiper('.swiper-container.dolphin-tv', {
+        // loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        // }
+    })
+
+
 
 $("#bingo").addClass('active-win')
 

@@ -27,6 +27,7 @@ $loaded = get_field("loaded_package");
         </nav>
     </article>
 
+	<!-- REGULAR -->
     <article data-aos="fade-up" id="regular" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $regular["title"];?></h3>
@@ -80,6 +81,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
+	<!-- DOUBLE UP -->
     <article data-aos="fade-up" id="double-up" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $double["title"];?></h3>
@@ -99,28 +101,28 @@ $loaded = get_field("loaded_package");
                         <h5><?php echo $titles["everyday"];?></h5>
                         <h5>10 am, 1 pm, 4 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$55</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-tues"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$65</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["wed-sat"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$60</p>
+                    <p>$70</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-thurs"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$55</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
@@ -133,6 +135,7 @@ $loaded = get_field("loaded_package");
         </div>
     </article>
 
+	<!-- MAX -->
     <article data-aos="fade-up" id="max" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $max["title"];?></h3>
@@ -152,40 +155,41 @@ $loaded = get_field("loaded_package");
                         <h5><?php echo $titles["everyday"];?></h5>
                         <h5>10 am, 1 pm, 4 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$80</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-tues"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$90</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["wed-sat"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$60</p>
+                    <p>$100</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-thurs"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$90</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["fri-sat"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$90</p>
                 </div>
             </div>
         </div>
     </article>
 
+	<!-- MIN -->
     <article data-aos="fade-up" id="min" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $min["title"];?></h3>
@@ -205,40 +209,41 @@ $loaded = get_field("loaded_package");
                         <h5><?php echo $titles["everyday"];?></h5>
                         <h5>10 am, 1 pm, 4 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$20</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-tues"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$25</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["wed-sat"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$60</p>
+                    <p>$30</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-thurs"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$25</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["fri-sat"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$20</p>
                 </div>
             </div>
         </div>
     </article>
 
+	<!-- LOADED -->
     <article data-aos="fade-up" id="loaded" class="container">
         <div class="max-width-lg">
             <h3 class="section-title"><?php echo $loaded["title"];?></h3>
@@ -258,35 +263,35 @@ $loaded = get_field("loaded_package");
                         <h5><?php echo $titles["everyday"];?></h5>
                         <h5>10 am, 1 pm, 4 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$105</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-tues"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$110</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["wed-sat"];?></h5>
                         <h5>7 pm</h5>
                     </div>
-                    <p>$60</p>
+                    <p>$125</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["sun-thurs"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$45</p>
+                    <p>$105</p>
                 </div>
                 <div class="package-details">
                     <div class="package-info">
                         <h5><?php echo $titles["fri-sat"];?></h5>
                         <h5>10:15 pm</h5>
                     </div>
-                    <p>$55</p>
+                    <p>$105</p>
                 </div>
             </div>
         </div>
